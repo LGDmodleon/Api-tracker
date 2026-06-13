@@ -545,8 +545,8 @@
       document.getElementById('navTimeFull').textContent = '暂无数据';
       return;
     }
-    // 解析 ISO 时间（兼容 +08:00 格式）
-    const dt = new Date(rawTime.replace('+08:00', '+08:00').replace(/\+(\d{2}):(\d{2})$/, '+$1$2'));
+    // 解析 ISO 8601 时间（现代浏览器均支持带时区的格式）
+    const dt = new Date(rawTime);
     if (isNaN(dt.getTime())) {
       document.getElementById('navTimeFull').textContent = rawTime;
       return;

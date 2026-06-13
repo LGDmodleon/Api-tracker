@@ -132,10 +132,14 @@ def create_empty_summary():
     }
 
 
-def update_summary(api_data, summary):
-    """用新的API数据更新summary"""
+def update_summary(api_data, summary, date_override=None):
+    """用新的API数据更新summary。
+
+    date_override: 指定日期字符串(YYYY-MM-DD)，用于重建时从文件名提取日期。
+                   为None时使用当前北京时间。
+    """
     now_beijing = get_beijing_time()
-    today = get_beijing_date()
+    today = date_override if date_override else get_beijing_date()
 
     # 更新元数据
     summary["updatedAt"] = now_beijing
@@ -307,9 +311,12 @@ def rebuild_summary():
         if not api_data:
             continue
 
+        # 从文件名提取日期：2026-06-13_19.json → 2026-06-13，2026-06-12.json → 2026-06-12
         date_str = filename.replace(".json", "")
-        # 临时设置日期来正确更新trackedDates
-        summary = update_summary(api_data, summary)
+        if "_" in date_str:
+            date_str = date_str.split("_")[0]
+
+        summary = update_summary(api_data, summary, date_override=date_str)
 
     save_json(SUMMARY_FILE, summary)
     print(f"  → 重建完成，共处理 {len(daily_files)} 天数据")

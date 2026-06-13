@@ -1,12 +1,13 @@
 // 由 main.py 自动生成，请勿手动编辑
-// 生成时间: 2026-06-13T21:20:21+08:00
-// 追踪天数: 1
+// 生成时间: 2026-06-13T21:24:45+08:00
+// 追踪天数: 2
 const LEADERBOARD_DATA = {
-  "updatedAt": "2026-06-13T21:20:21+08:00",
+  "updatedAt": "2026-06-13T21:24:45+08:00",
   "lastFetchDate": "2026-06-13",
-  "totalDaysTracked": 1,
+  "totalDaysTracked": 2,
   "totalSnapshots": 4,
   "trackedDates": [
+    "2026-06-12",
     "2026-06-13"
   ],
   "models": {
@@ -25,7 +26,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 10,
               "passRate": 91.3,
               "onlineRate": 100,
@@ -76,7 +77,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.4,
           "latestInputPriceCny": 4,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -89,7 +90,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 7,
               "passRate": 91.1,
               "onlineRate": 95.7,
@@ -140,7 +141,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.5,
           "latestInputPriceCny": 6,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -153,7 +154,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "personal",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 4,
               "passRate": 97.8,
               "onlineRate": 95.7,
@@ -204,7 +205,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4.1,
           "latestInputPriceCny": 3.85,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -217,7 +218,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 9,
               "passRate": 89.1,
               "onlineRate": 100,
@@ -268,7 +269,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.2,
           "latestInputPriceCny": 10.17,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -588,7 +589,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 1,
               "passRate": 95.7,
               "onlineRate": 100,
@@ -606,8 +607,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4.3,
           "latestInputPriceCny": 8.5,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40206",
@@ -619,7 +620,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 2,
               "passRate": 89.1,
               "onlineRate": 100,
@@ -637,8 +638,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 5.1,
           "latestInputPriceCny": 8.05,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40216",
@@ -650,7 +651,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 3,
               "passRate": 97.9,
               "onlineRate": 100,
@@ -668,8 +669,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4.7,
           "latestInputPriceCny": 14.49,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40175",
@@ -681,7 +682,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "personal",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 5,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -699,8 +700,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 95.7,
           "latestAvgLatencyS": 5.2,
           "latestInputPriceCny": 9.5,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40169",
@@ -712,7 +713,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 6,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -730,8 +731,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 95.7,
           "latestAvgLatencyS": 5.8,
           "latestInputPriceCny": 5.175,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40126",
@@ -743,7 +744,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 8,
               "passRate": 97.9,
               "onlineRate": 100,
@@ -761,8 +762,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 5.4,
           "latestInputPriceCny": 8,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39783",
@@ -812,7 +813,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 2,
               "passRate": 100,
               "onlineRate": 100,
@@ -863,7 +864,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4,
           "latestInputPriceCny": 10.35,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -876,7 +877,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 3,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -927,7 +928,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.5,
           "latestInputPriceCny": 6,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -940,7 +941,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 6,
               "passRate": 100,
               "onlineRate": 100,
@@ -991,7 +992,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.3,
           "latestInputPriceCny": 10.17,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -1004,7 +1005,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 8,
               "passRate": 100,
               "onlineRate": 100,
@@ -1055,7 +1056,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.3,
           "latestInputPriceCny": 10,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -1174,7 +1175,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "personal",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 7,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -1214,7 +1215,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.9,
           "latestInputPriceCny": 3.85,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -1353,7 +1354,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 1,
               "passRate": 100,
               "onlineRate": 97.8,
@@ -1371,8 +1372,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 97.8,
           "latestAvgLatencyS": 4.7,
           "latestInputPriceCny": 8.05,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40121",
@@ -1415,7 +1416,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 4,
               "passRate": 100,
               "onlineRate": 97.9,
@@ -1433,8 +1434,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 97.9,
           "latestAvgLatencyS": 3.1,
           "latestInputPriceCny": 5.175,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40175",
@@ -1446,7 +1447,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "personal",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 5,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -1464,8 +1465,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 95.7,
           "latestAvgLatencyS": 5,
           "latestInputPriceCny": 9.5,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40095",
@@ -1508,7 +1509,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 9,
               "passRate": 100,
               "onlineRate": 100,
@@ -1526,8 +1527,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 7.1,
           "latestInputPriceCny": 4.5567,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39968",
@@ -1570,7 +1571,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 10,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -1588,8 +1589,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 95.7,
           "latestAvgLatencyS": 5.9,
           "latestInputPriceCny": 9,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39799",
@@ -1957,7 +1958,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 9,
               "passRate": 100,
               "onlineRate": 100,
@@ -1997,7 +1998,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 6.9,
           "latestInputPriceCny": 1,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -2010,7 +2011,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 10,
               "passRate": 100,
               "onlineRate": 97.9,
@@ -2050,7 +2051,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 97.8,
           "latestAvgLatencyS": 8.6,
           "latestInputPriceCny": 3.45,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -2105,7 +2106,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 3,
               "passRate": 100,
               "onlineRate": 100,
@@ -2134,7 +2135,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 11,
           "latestInputPriceCny": 1.44,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -2189,7 +2190,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 7,
               "passRate": 100,
               "onlineRate": 100,
@@ -2218,7 +2219,7 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 7.9,
           "latestInputPriceCny": 1.9,
-          "firstSeen": "2026-06-13",
+          "firstSeen": "2026-06-12",
           "lastSeen": "2026-06-13"
         },
         {
@@ -2231,7 +2232,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 1,
               "passRate": 100,
               "onlineRate": 100,
@@ -2249,8 +2250,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 9.3,
           "latestInputPriceCny": 5,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40178",
@@ -2262,7 +2263,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 2,
               "passRate": 100,
               "onlineRate": 100,
@@ -2280,8 +2281,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 9.8,
           "latestInputPriceCny": 2.5,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40001",
@@ -2293,7 +2294,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 4,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -2311,8 +2312,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 95.7,
           "latestAvgLatencyS": 9.9,
           "latestInputPriceCny": 1.2,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40009",
@@ -2324,7 +2325,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 5,
               "passRate": 97.9,
               "onlineRate": 100,
@@ -2342,8 +2343,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 10.2,
           "latestInputPriceCny": 1.75,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39850",
@@ -2355,7 +2356,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 6,
               "passRate": 100,
               "onlineRate": 100,
@@ -2373,8 +2374,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 9.9,
           "latestInputPriceCny": 3.39,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40281",
@@ -2417,7 +2418,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-13",
+              "date": "2026-06-12",
               "rank": 8,
               "passRate": 100,
               "onlineRate": 100,
@@ -2435,8 +2436,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 9.9,
           "latestInputPriceCny": 1.2,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
+          "firstSeen": "2026-06-12",
+          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39812",
