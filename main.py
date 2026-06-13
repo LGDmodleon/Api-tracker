@@ -107,6 +107,12 @@ def get_beijing_date():
     return datetime.now(beijing).strftime("%Y-%m-%d")
 
 
+def get_beijing_hour():
+    """获取北京时间小时字符串"""
+    beijing = timezone(timedelta(hours=8))
+    return datetime.now(beijing).strftime("%H")
+
+
 def get_beijing_time():
     """获取北京时间ISO格式字符串"""
     beijing = timezone(timedelta(hours=8))
@@ -126,6 +132,7 @@ def create_empty_summary():
         "updatedAt": "",
         "lastFetchDate": "",
         "totalDaysTracked": 0,
+        "totalSnapshots": 0,
         "trackedDates": [],
         "models": models_data
     }
@@ -139,6 +146,7 @@ def update_summary(api_data, summary):
     # 更新元数据
     summary["updatedAt"] = now_beijing
     summary["lastFetchDate"] = today
+    summary["totalSnapshots"] = summary.get("totalSnapshots", 0) + 1
 
     if today not in summary["trackedDates"]:
         summary["trackedDates"].append(today)
@@ -245,6 +253,7 @@ def generate_data_js(summary):
         "updatedAt": summary["updatedAt"],
         "lastFetchDate": summary["lastFetchDate"],
         "totalDaysTracked": summary["totalDaysTracked"],
+        "totalSnapshots": summary.get("totalSnapshots", 0),
         "trackedDates": summary["trackedDates"],
         "models": {}
     }
@@ -319,7 +328,7 @@ def print_stats(summary):
     print("  ╔══════════════════════════════╗")
     print("  ║       数据统计摘要              ║")
     print("  ╚══════════════════════════════╝")
-    print(f"  追踪天数: {summary['totalDaysTracked']}")
+    print(f"  追踪天数: {summary['totalDaysTracked']}  |  快照总数: {summary.get('totalSnapshots', 0)}")
     print(f"  追踪日期: {', '.join(summary['trackedDates'][-7:])}")
     print()
 
@@ -375,11 +384,12 @@ def main():
 
     # 正常采集模式
     today = get_beijing_date()
-    daily_file = os.path.join(DAILY_DIR, f"{today}.json")
+    hour = get_beijing_hour()
+    daily_file = os.path.join(DAILY_DIR, f"{today}_{hour}.json")
 
-    # 检查今天是否已采集
+    # 检查该小时是否已采集
     if os.path.exists(daily_file) and len(sys.argv) <= 1:
-        print(f"  [提示] {today} 的数据已存在，跳过采集。")
+        print(f"  [提示] {today} {hour}:00 的数据已存在，跳过采集。")
         print(f"  如需强制重新采集，请删除文件: {daily_file}")
         print(f"  或使用 --rebuild 从所有历史数据重建。")
         print()
@@ -392,7 +402,7 @@ def main():
         return
 
     # 1. 获取最新数据
-    print(f"  [1/3] 采集最新数据 ({today})")
+    print(f"  [1/3] 采集最新数据 ({today} {hour}:00)")
     api_data = fetch_leaderboard()
     if not api_data:
         print()
@@ -411,6 +421,9 @@ def main():
     if summary is None:
         print("  → 未找到 summary.json，创建新文件")
         summary = create_empty_summary()
+    elif "totalSnapshots" not in summary:
+        # 兼容旧格式：按已有天数回填快照计数
+        summary["totalSnapshots"] = len(summary.get("trackedDates", []))
 
     summary = update_summary(api_data, summary)
     save_json(SUMMARY_FILE, summary)
