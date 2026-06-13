@@ -88,17 +88,33 @@
     color: var(--text-primary);
   }
   .nav-meta {
-    display: flex; align-items: center; gap: 20px;
-    font-size: 0.8rem; color: var(--text-tertiary);
+    display: flex; align-items: center; gap: 16px;
   }
   .nav-updated {
-    display: flex; align-items: center; gap: 6px;
+    display: flex; align-items: center; gap: 8px;
+    background: rgba(52, 211, 153, 0.08);
+    border: 1px solid rgba(52, 211, 153, 0.18);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
   }
   .nav-dot {
-    width: 6px; height: 6px; border-radius: 50%;
+    width: 7px; height: 7px; border-radius: 50%;
     background: var(--accent-green);
-    box-shadow: 0 0 6px var(--accent-green-glow);
+    box-shadow: 0 0 8px var(--accent-green-glow);
     animation: pulse-dot 2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  .nav-time-full {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-right: 2px;
+  }
+  .nav-time-ago {
+    font-size: 0.78rem;
+    color: var(--accent-green);
+    white-space: nowrap;
   }
   @keyframes pulse-dot {
     0%, 100% { opacity: 1; }
@@ -388,8 +404,11 @@
       <span class="nav-title">API供应商排行榜追踪</span>
     </div>
     <div class="nav-meta" id="navMeta">
-      <span class="nav-dot"></span>
-      <span id="navUpdated">加载中...</span>
+      <div class="nav-updated">
+        <span class="nav-dot"></span>
+        <span class="nav-time-full" id="navTimeFull">加载中...</span>
+        <span class="nav-time-ago" id="navTimeAgo"></span>
+      </div>
     </div>
   </div>
 </nav>
@@ -523,8 +542,40 @@
   document.getElementById('dashboard').style.display = 'block';
 
   // ── Update nav ──
-  document.getElementById('navUpdated').textContent =
-    '更新于 ' + (DATA.updatedAt || DATA.lastFetchDate || '未知');
+  (function updateNavTime() {
+    const rawTime = DATA.updatedAt || DATA.lastFetchDate;
+    if (!rawTime) {
+      document.getElementById('navTimeFull').textContent = '暂无数据';
+      return;
+    }
+    // 解析 ISO 时间（兼容 +08:00 格式）
+    const dt = new Date(rawTime.replace('+08:00', '+08:00').replace(/\+(\d{2}):(\d{2})$/, '+$1$2'));
+    if (isNaN(dt.getTime())) {
+      document.getElementById('navTimeFull').textContent = rawTime;
+      return;
+    }
+    // 格式化本地时间
+    const m = dt.getMonth() + 1;
+    const d = dt.getDate();
+    const hh = String(dt.getHours()).padStart(2, '0');
+    const mm = String(dt.getMinutes()).padStart(2, '0');
+    const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
+    const wd = weekdays[dt.getDay()];
+    document.getElementById('navTimeFull').textContent = `${m}月${d}日 周${wd} ${hh}:${mm}`;
+
+    // 计算相对时间
+    const now = new Date();
+    const diffMs = now - dt;
+    const diffMin = Math.floor(diffMs / 60000);
+    const diffHr = Math.floor(diffMs / 3600000);
+    const diffDay = Math.floor(diffMs / 86400000);
+    let agoText = '';
+    if (diffMin < 1) agoText = '刚刚更新';
+    else if (diffMin < 60) agoText = `${diffMin} 分钟前`;
+    else if (diffHr < 24) agoText = `${diffHr} 小时前`;
+    else agoText = `${diffDay} 天前`;
+    document.getElementById('navTimeAgo').textContent = agoText;
+  })();
   document.getElementById('statDays').textContent = DATA.totalDaysTracked;
   document.getElementById('statLastFetch').textContent = DATA.lastFetchDate || '-';
 
