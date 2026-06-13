@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 日志 (本地才有)
+logs/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code (本地配置，不提交)
+.claude/
+.agents/
+skills-lock.json

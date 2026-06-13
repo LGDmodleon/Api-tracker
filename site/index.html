@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API供应商排行榜追踪 — 禾维数据</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<style>
+  :root {
+    --bg-root: #06080D;
+    --bg-surface: #0C1019;
+    --bg-card: #111827;
+    --bg-card-hover: #161E30;
+    --bg-elevated: #1A2338;
+    --border-subtle: #1A2332;
+    --border-default: #243044;
+    --border-emphasis: #334560;
+    --text-primary: #F0F3F8;
+    --text-secondary: #94A3B8;
+    --text-tertiary: #64748B;
+    --text-disabled: #3E4A5C;
+    --accent-purple: #A78BFA;
+    --accent-purple-glow: rgba(167, 139, 250, 0.25);
+    --accent-blue: #60A5FA;
+    --accent-blue-glow: rgba(96, 165, 250, 0.25);
+    --accent-green: #34D399;
+    --accent-green-glow: rgba(52, 211, 153, 0.25);
+    --accent-amber: #FBBF24;
+    --accent-amber-glow: rgba(251, 191, 36, 0.25);
+    --accent-rose: #FB7185;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --shadow-card: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.03) inset;
+    --shadow-elevated: 0 4px 24px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.04) inset;
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", system-ui, -apple-system, sans-serif;
+    background: var(--bg-root);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.5;
+    /* Subtle dot grid background */
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(6,8,13,0.85);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 0 2rem;
+  }
+  .nav-inner {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 56px;
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .nav-logo {
+    width: 32px; height: 32px;
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 700; color: #fff;
+    box-shadow: 0 0 16px var(--accent-purple-glow);
+  }
+  .nav-title {
+    font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em;
+    color: var(--text-primary);
+  }
+  .nav-meta {
+    display: flex; align-items: center; gap: 20px;
+    font-size: 0.8rem; color: var(--text-tertiary);
+  }
+  .nav-updated {
+    display: flex; align-items: center; gap: 6px;
+  }
+  .nav-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent-green);
+    box-shadow: 0 0 6px var(--accent-green-glow);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ── Main Container ── */
+  .main {
+    max-width: 1400px; margin: 0 auto; padding: 2rem;
+  }
+
+  /* ── Stat Cards ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 18px 22px;
+    box-shadow: var(--shadow-card);
+    transition: all var(--transition-smooth);
+    position: relative; overflow: hidden;
+  }
+  .stat-card::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    opacity: 0;
+    transition: opacity var(--transition-smooth);
+  }
+  .stat-card:nth-child(1)::after { background: var(--accent-purple); }
+  .stat-card:nth-child(2)::after { background: var(--accent-blue); }
+  .stat-card:nth-child(3)::after { background: var(--accent-green); }
+  .stat-card:nth-child(4)::after { background: var(--accent-amber); }
+  .stat-card:hover { border-color: var(--border-emphasis); box-shadow: var(--shadow-elevated); }
+  .stat-card:hover::after { opacity: 1; }
+  .stat-label {
+    font-size: 0.75rem; font-weight: 500;
+    color: var(--text-tertiary); text-transform: uppercase;
+    letter-spacing: 0.06em; margin-bottom: 6px;
+  }
+  .stat-value {
+    font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .stat-value.purple { color: var(--accent-purple); }
+  .stat-value.blue   { color: var(--accent-blue); }
+  .stat-value.green  { color: var(--accent-green); }
+  .stat-value.amber  { color: var(--accent-amber); }
+
+  /* ── Model Tabs ── */
+  .tabs-container { margin-bottom: 24px; }
+  .tabs {
+    display: flex; gap: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 4px;
+    overflow-x: auto;
+  }
+  .tab {
+    flex: 1; min-width: 0;
+    padding: 10px 16px;
+    font-size: 0.85rem; font-weight: 500;
+    color: var(--text-tertiary);
+    background: transparent;
+    border: none; border-radius: 7px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    position: relative;
+  }
+  .tab:hover { color: var(--text-secondary); background: rgba(255,255,255,0.03); }
+  .tab.active { color: #fff; background: var(--bg-elevated); }
+  .tab[data-model="fable5"].active { box-shadow: 0 0 12px var(--accent-purple-glow); }
+  .tab[data-model="opus48"].active { box-shadow: 0 0 12px var(--accent-blue-glow); }
+  .tab[data-model="opus46"].active { box-shadow: 0 0 12px var(--accent-green-glow); }
+  .tab[data-model="gpt55"].active  { box-shadow: 0 0 12px var(--accent-amber-glow); }
+  .tab-indicator {
+    display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+    margin-right: 7px; vertical-align: middle; position: relative; top: -1px;
+  }
+  .tab[data-model="fable5"] .tab-indicator { background: var(--accent-purple); }
+  .tab[data-model="opus48"] .tab-indicator { background: var(--accent-blue); }
+  .tab[data-model="opus46"] .tab-indicator { background: var(--accent-green); }
+  .tab[data-model="gpt55"]  .tab-indicator { background: var(--accent-amber); }
+
+  /* ── Dashboard Body ── */
+  .dash-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 420px auto;
+    gap: 16px;
+  }
+  @media (max-width: 1100px) {
+    .dash-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .main { padding: 1rem; }
+    .nav { padding: 0 1rem; }
+  }
+
+  .panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-card);
+    display: flex; flex-direction: column;
+  }
+  .panel.full-width { grid-column: 1 / -1; }
+  .panel-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .panel-title {
+    font-size: 0.9rem; font-weight: 600;
+    color: var(--text-primary); letter-spacing: -0.01em;
+  }
+  .panel-badge {
+    font-size: 0.7rem; font-weight: 500;
+    color: var(--text-tertiary);
+    background: var(--bg-elevated);
+    padding: 3px 10px; border-radius: 100px;
+  }
+  .chart-wrap { flex: 1; position: relative; min-height: 0; }
+
+  /* ── Search & Table ── */
+  .table-toolbar {
+    display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap;
+  }
+  .search-input {
+    flex: 1; min-width: 200px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-sm);
+    padding: 8px 14px;
+    font-size: 0.82rem; color: var(--text-primary);
+    outline: none; font-family: inherit;
+    transition: border-color var(--transition-fast);
+  }
+  .search-input::placeholder { color: var(--text-disabled); }
+  .search-input:focus { border-color: var(--accent-blue); box-shadow: 0 0 0 3px var(--accent-blue-glow); }
+
+  .table-wrap { overflow-x: auto; flex: 1; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  thead th {
+    text-align: left; font-weight: 500; color: var(--text-tertiary);
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em;
+    padding: 10px 12px; border-bottom: 1px solid var(--border-subtle);
+    cursor: pointer; user-select: none; white-space: nowrap;
+    transition: color var(--transition-fast);
+  }
+  thead th:hover { color: var(--text-secondary); }
+  thead th .sort-arrow { margin-left: 4px; font-size: 0.65rem; }
+  tbody td {
+    padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.025);
+    white-space: nowrap;
+  }
+  tbody tr {
+    cursor: pointer;
+    transition: background var(--transition-fast);
+  }
+  tbody tr:hover { background: var(--bg-card-hover); }
+  .rank-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 6px;
+    font-size: 0.75rem; font-weight: 700;
+    background: var(--bg-elevated); color: var(--text-secondary);
+  }
+  .rank-badge.top { background: rgba(251,191,36,0.15); color: var(--accent-amber); }
+  .rank-badge.top2 { background: rgba(148,163,184,0.12); color: #CBD5E1; }
+  .rank-badge.top3 { background: rgba(180,130,90,0.15); color: #D4A574; }
+  .site-name { font-weight: 600; color: var(--text-primary); }
+  .site-domain { font-size: 0.75rem; color: var(--text-tertiary); }
+  .metric-good { color: var(--accent-green); }
+  .metric-warn { color: var(--accent-amber); }
+  .metric-bad  { color: var(--accent-rose); }
+  .tag {
+    display: inline-block; font-size: 0.65rem; font-weight: 500;
+    padding: 2px 8px; border-radius: 4px;
+    background: var(--bg-elevated); color: var(--text-tertiary);
+  }
+  .tag.enterprise { background: rgba(167,139,250,0.12); color: var(--accent-purple); }
+  .tag.personal   { background: rgba(96,165,250,0.12); color: var(--accent-blue); }
+
+  /* ── Modal ── */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 100;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity var(--transition-smooth);
+  }
+  .modal-overlay.active { opacity: 1; pointer-events: auto; }
+  .modal {
+    background: var(--bg-card);
+    border: 1px solid var(--border-emphasis);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-elevated), 0 24px 80px rgba(0,0,0,0.6);
+    width: min(720px, 92vw);
+    max-height: 85vh;
+    display: flex; flex-direction: column;
+    transform: translateY(12px) scale(0.97);
+    transition: transform var(--transition-smooth);
+  }
+  .modal-overlay.active .modal { transform: translateY(0) scale(1); }
+  .modal-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 24px; border-bottom: 1px solid var(--border-subtle);
+  }
+  .modal-title-group { display: flex; flex-direction: column; gap: 2px; }
+  .modal-title { font-size: 1.05rem; font-weight: 600; }
+  .modal-subtitle { font-size: 0.78rem; color: var(--text-tertiary); }
+  .modal-close {
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--bg-elevated); border: 1px solid var(--border-default);
+    border-radius: var(--radius-sm); color: var(--text-tertiary);
+    font-size: 1.1rem; cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  .modal-close:hover { background: var(--border-default); color: var(--text-primary); }
+  .modal-body {
+    padding: 20px 24px; flex: 1; overflow-y: auto;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .modal-chart-wrap { height: 280px; position: relative; }
+  .modal-stats {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+  }
+  .modal-stat {
+    background: var(--bg-elevated); border-radius: var(--radius-sm);
+    padding: 12px; text-align: center;
+  }
+  .modal-stat-label { font-size: 0.68rem; color: var(--text-tertiary); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .modal-stat-value { font-size: 1.1rem; font-weight: 700; }
+
+  /* ── Empty State ── */
+  .empty-state {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 80px 20px; text-align: center;
+  }
+  .empty-icon {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--bg-elevated);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; margin-bottom: 16px;
+    border: 1px solid var(--border-default);
+  }
+  .empty-title { font-size: 1rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
+  .empty-desc { font-size: 0.82rem; color: var(--text-tertiary); max-width: 320px; }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-emphasis); }
+
+  /* ── Animation ── */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .stat-card { animation: fadeInUp 0.4s ease backwards; }
+  .stat-card:nth-child(2) { animation-delay: 0.05s; }
+  .stat-card:nth-child(3) { animation-delay: 0.1s; }
+  .stat-card:nth-child(4) { animation-delay: 0.15s; }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <div class="nav-logo">H</div>
+      <span class="nav-title">API供应商排行榜追踪</span>
+    </div>
+    <div class="nav-meta" id="navMeta">
+      <span class="nav-dot"></span>
+      <span id="navUpdated">加载中...</span>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="main" id="app">
+  <!-- Empty state (shown when no data) -->
+  <div class="empty-state" id="emptyState">
+    <div class="empty-icon">&#128202;</div>
+    <div class="empty-title">暂无数据</div>
+    <div class="empty-desc">请先运行数据采集脚本 (main.py) 来获取排行榜数据</div>
+  </div>
+
+  <!-- Dashboard (hidden when no data) -->
+  <div id="dashboard" style="display:none">
+
+    <!-- Stat Cards -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">追踪天数</div>
+        <div class="stat-value purple" id="statDays">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">当前模型供应商</div>
+        <div class="stat-value blue" id="statVendors">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">追踪模型</div>
+        <div class="stat-value green">4</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">最新采集</div>
+        <div class="stat-value amber" id="statLastFetch" style="font-size:1.2rem">-</div>
+      </div>
+    </div>
+
+    <!-- Model Tabs -->
+    <div class="tabs-container">
+      <div class="tabs" id="modelTabs"></div>
+    </div>
+
+    <!-- Dashboard Grid -->
+    <div class="dash-grid">
+      <!-- Chart Panel -->
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">上榜次数排名</span>
+          <span class="panel-badge" id="chartBadge">Top 10</span>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Table Panel -->
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">供应商详细数据</span>
+          <span class="panel-badge" id="tableBadge">10 条</span>
+        </div>
+        <div class="table-toolbar">
+          <input type="text" class="search-input" id="searchInput" placeholder="搜索供应商名称、域名或通道...">
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-sort="rank"># <span class="sort-arrow"></span></th>
+                <th data-sort="site">供应商 <span class="sort-arrow"></span></th>
+                <th data-sort="channel">通道 <span class="sort-arrow"></span></th>
+                <th data-sort="domain">域名 <span class="sort-arrow"></span></th>
+                <th data-sort="appearances">上榜次数 <span class="sort-arrow"></span></th>
+                <th data-sort="bestRank">最佳排名 <span class="sort-arrow"></span></th>
+                <th data-sort="passRate">最新通过率 <span class="sort-arrow"></span></th>
+                <th data-sort="onlineRate">最新在线率 <span class="sort-arrow"></span></th>
+                <th data-sort="latency">平均延迟 <span class="sort-arrow"></span></th>
+                <th data-sort="lastSeen">最近出现 <span class="sort-arrow"></span></th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title-group">
+        <div class="modal-title" id="modalTitle">-</div>
+        <div class="modal-subtitle" id="modalSubtitle">-</div>
+      </div>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-stats" id="modalStats"></div>
+      <div class="modal-chart-wrap">
+        <canvas id="trendChart"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  // ── Data check ──
+  if (typeof LEADERBOARD_DATA === 'undefined') {
+    document.getElementById('emptyState').style.display = 'flex';
+    return;
+  }
+
+  const DATA = LEADERBOARD_DATA;
+  const MODEL_KEYS = ['fable5', 'opus48', 'opus46', 'gpt55'];
+  const MODEL_COLORS = {
+    fable5: { main: '#A78BFA', glow: 'rgba(167,139,250,0.3)', bg: 'rgba(167,139,250,0.08)' },
+    opus48: { main: '#60A5FA', glow: 'rgba(96,165,250,0.3)', bg: 'rgba(96,165,250,0.08)' },
+    opus46: { main: '#34D399', glow: 'rgba(52,211,153,0.3)', bg: 'rgba(52,211,153,0.08)' },
+    gpt55:  { main: '#FBBF24', glow: 'rgba(251,191,36,0.3)', bg: 'rgba(251,191,36,0.08)' }
+  };
+
+  let currentModel = 'fable5';
+  let currentSort = { field: 'appearances', asc: false };
+  let barChart = null;
+  let trendChart = null;
+
+  // ── Show dashboard ──
+  document.getElementById('emptyState').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+
+  // ── Update nav ──
+  document.getElementById('navUpdated').textContent =
+    '更新于 ' + (DATA.updatedAt || DATA.lastFetchDate || '未知');
+  document.getElementById('statDays').textContent = DATA.totalDaysTracked;
+  document.getElementById('statLastFetch').textContent = DATA.lastFetchDate || '-';
+
+  // ── Build model tabs ──
+  const tabsContainer = document.getElementById('modelTabs');
+  MODEL_KEYS.forEach(key => {
+    const model = DATA.models[key];
+    if (!model) return;
+    const btn = document.createElement('button');
+    btn.className = 'tab';
+    btn.dataset.model = key;
+    btn.innerHTML = `<span class="tab-indicator"></span>${model.displayName}`;
+    btn.addEventListener('click', () => switchModel(key));
+    tabsContainer.appendChild(btn);
+  });
+
+  function switchModel(key) {
+    currentModel = key;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelector(`.tab[data-model="${key}"]`).classList.add('active');
+    const model = DATA.models[key];
+    document.getElementById('statVendors').textContent = model.totalVendors;
+    document.getElementById('chartBadge').textContent = `Top ${model.vendors.length}`;
+    document.getElementById('tableBadge').textContent = `${model.vendors.length} 条`;
+    renderBarChart(model);
+    renderTable(model);
+  }
+
+  // ── Bar Chart ──
+  function renderBarChart(model) {
+    const ctx = document.getElementById('barChart').getContext('2d');
+    if (barChart) barChart.destroy();
+
+    const vendors = model.vendors || [];
+    const color = MODEL_COLORS[currentModel];
+
+    // Take top 15 for chart readability
+    const topVendors = vendors.slice(0, 15);
+    const labels = topVendors.map(v => v.site.length > 8 ? v.site.slice(0,8) + '…' : v.site);
+    const values = topVendors.map(v => v.totalAppearances);
+
+    barChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: '上榜次数',
+          data: values,
+          backgroundColor: values.map((_, i) => {
+            const alpha = 0.35 + (0.55 * (1 - i / values.length));
+            return `rgba(${hexToRgb(color.main)},${alpha.toFixed(2)})`;
+          }),
+          borderColor: values.map(() => color.main),
+          borderWidth: 1,
+          borderRadius: 4,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#1A2338',
+            titleColor: '#F0F3F8',
+            bodyColor: '#94A3B8',
+            borderColor: '#334560',
+            borderWidth: 1,
+            cornerRadius: 8,
+            padding: 12,
+            callbacks: {
+              title: function(items) {
+                const idx = items[0].dataIndex;
+                return topVendors[idx].site + ' / ' + topVendors[idx].channel;
+              },
+              label: function(item) {
+                return '上榜 ' + item.raw + ' 次';
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 1,
+              color: '#64748B',
+              font: { size: 11 }
+            },
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            border: { color: '#1A2332' }
+          },
+          y: {
+            ticks: {
+              color: '#94A3B8',
+              font: { size: 11, weight: '500' },
+              padding: 8
+            },
+            grid: { display: false },
+            border: { color: '#1A2332' }
+          }
+        }
+      }
+    });
+  }
+
+  function hexToRgb(hex) {
+    const r = parseInt(hex.slice(1,3), 16);
+    const g = parseInt(hex.slice(3,5), 16);
+    const b = parseInt(hex.slice(5,7), 16);
+    return `${r},${g},${b}`;
+  }
+
+  // ── Table ──
+  function renderTable(model, sortField, sortAsc) {
+    const field = sortField || currentSort.field;
+    const asc = sortAsc !== undefined ? sortAsc : currentSort.asc;
+    const vendors = [...(model.vendors || [])];
+    const searchText = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+
+    // Filter
+    const filtered = vendors.filter(v => {
+      if (!searchText) return true;
+      return (v.site || '').toLowerCase().includes(searchText) ||
+             (v.siteDomain || '').toLowerCase().includes(searchText) ||
+             (v.channel || '').toLowerCase().includes(searchText);
+    });
+
+    // Sort
+    filtered.sort((a, b) => {
+      let va, vb;
+      switch (field) {
+        case 'rank': va = a.bestRank; vb = b.bestRank; break;
+        case 'site': va = a.site; vb = b.site; return asc ? va.localeCompare(vb) : vb.localeCompare(va);
+        case 'channel': va = a.channel; vb = b.channel; return asc ? va.localeCompare(vb) : vb.localeCompare(va);
+        case 'domain': va = a.siteDomain; vb = b.siteDomain; return asc ? va.localeCompare(vb) : vb.localeCompare(va);
+        case 'appearances': va = a.totalAppearances; vb = b.totalAppearances; break;
+        case 'bestRank': va = a.bestRank; vb = b.bestRank; break;
+        case 'passRate': va = a.latestPassRate || 0; vb = b.latestPassRate || 0; break;
+        case 'onlineRate': va = a.latestOnlineRate || 0; vb = b.latestOnlineRate || 0; break;
+        case 'latency': va = a.latestAvgLatencyS || 999; vb = b.latestAvgLatencyS || 999; break;
+        case 'lastSeen': va = a.lastSeen || ''; vb = b.lastSeen || ''; return asc ? va.localeCompare(vb) : vb.localeCompare(va);
+        default: va = a.totalAppearances; vb = b.totalAppearances;
+      }
+      return asc ? va - vb : vb - va;
+    });
+
+    // Update sort state
+    currentSort = { field, asc };
+
+    // Update sort arrows
+    document.querySelectorAll('thead th').forEach(th => {
+      const f = th.dataset.sort;
+      th.querySelector('.sort-arrow').textContent = f === field ? (asc ? '▲' : '▼') : '';
+    });
+
+    // Render rows
+    const tbody = document.getElementById('tableBody');
+    document.getElementById('tableBadge').textContent = `${filtered.length} 条`;
+    tbody.innerHTML = filtered.map((v, i) => {
+      const rankClass = v.bestRank === 1 ? 'top' : v.bestRank === 2 ? 'top2' : v.bestRank === 3 ? 'top3' : '';
+      const passClass = (v.latestPassRate || 0) >= 95 ? 'metric-good' : (v.latestPassRate || 0) >= 85 ? 'metric-warn' : 'metric-bad';
+      const onlineClass = (v.latestOnlineRate || 0) >= 95 ? 'metric-good' : (v.latestOnlineRate || 0) >= 85 ? 'metric-warn' : 'metric-bad';
+      const latClass = (v.latestAvgLatencyS || 999) <= 6 ? 'metric-good' : (v.latestAvgLatencyS || 999) <= 10 ? 'metric-warn' : 'metric-bad';
+      const tagClass = v.verificationType === 'enterprise' ? 'enterprise' : 'personal';
+      return `
+        <tr data-vendor-id="${v.relaySiteId}" onclick="window._openDetail('${v.relaySiteId}')">
+          <td><span class="rank-badge ${rankClass}">${i+1}</span></td>
+          <td>
+            <span class="site-name">${escHtml(v.site)}</span>
+          </td>
+          <td>${escHtml(v.channel)}</td>
+          <td><span class="site-domain">${escHtml(v.siteDomain)}</span></td>
+          <td><strong>${v.totalAppearances}</strong></td>
+          <td>#${v.bestRank}</td>
+          <td class="${passClass}">${v.latestPassRate != null ? v.latestPassRate.toFixed(1)+'%' : '-'}</td>
+          <td class="${onlineClass}">${v.latestOnlineRate != null ? v.latestOnlineRate.toFixed(1)+'%' : '-'}</td>
+          <td class="${latClass}">${v.latestAvgLatencyS != null ? v.latestAvgLatencyS.toFixed(1)+'s' : '-'}</td>
+          <td>${v.lastSeen || '-'}</td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function escHtml(s) { return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  // ── Table sort handlers ──
+  document.querySelectorAll('thead th').forEach(th => {
+    th.addEventListener('click', () => {
+      const field = th.dataset.sort;
+      let asc = currentSort.field === field ? !currentSort.asc : false;
+      if (field === 'rank' || field === 'bestRank' || field === 'latency') asc = !asc; // default asc for rank/latency
+      renderTable(DATA.models[currentModel], field, asc);
+    });
+  });
+
+  // ── Search handler ──
+  document.getElementById('searchInput').addEventListener('input', () => {
+    renderTable(DATA.models[currentModel]);
+  });
+
+  // ── Detail Modal ──
+  window._openDetail = function(relaySiteId) {
+    const model = DATA.models[currentModel];
+    const vendor = model.vendors.find(v => String(v.relaySiteId) === String(relaySiteId));
+    if (!vendor) return;
+
+    const color = MODEL_COLORS[currentModel];
+
+    document.getElementById('modalTitle').textContent = vendor.site + ' / ' + vendor.channel;
+    document.getElementById('modalSubtitle').textContent =
+      vendor.siteDomain + ' · ' + (vendor.verificationType === 'enterprise' ? '企业认证' : '个人认证') +
+      ' · 上榜 ' + vendor.totalAppearances + ' 次';
+
+    // Stats
+    document.getElementById('modalStats').innerHTML = `
+      <div class="modal-stat">
+        <div class="modal-stat-label">最佳排名</div>
+        <div class="modal-stat-value" style="color:${color.main}">#${vendor.bestRank}</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-label">最新通过率</div>
+        <div class="modal-stat-value">${vendor.latestPassRate != null ? vendor.latestPassRate.toFixed(1)+'%' : '-'}</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-label">最新在线率</div>
+        <div class="modal-stat-value">${vendor.latestOnlineRate != null ? vendor.latestOnlineRate.toFixed(1)+'%' : '-'}</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-label">平均延迟</div>
+        <div class="modal-stat-value">${vendor.latestAvgLatencyS != null ? vendor.latestAvgLatencyS.toFixed(1)+'s' : '-'}</div>
+      </div>
+    `;
+
+    // Trend chart
+    const appearances = vendor.appearances || [];
+    const dates = appearances.map(a => a.date);
+    const ranks = appearances.map(a => a.rank);
+    const passRates = appearances.map(a => a.passRate);
+
+    if (trendChart) trendChart.destroy();
+    const ctx = document.getElementById('trendChart').getContext('2d');
+    trendChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: dates,
+        datasets: [
+          {
+            label: '排名',
+            data: ranks,
+            borderColor: color.main,
+            backgroundColor: color.bg,
+            borderWidth: 2,
+            pointBackgroundColor: color.main,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            tension: 0.35,
+            fill: true,
+            yAxisID: 'y'
+          },
+          {
+            label: '通过率 %',
+            data: passRates,
+            borderColor: '#34D399',
+            backgroundColor: 'rgba(52,211,153,0.08)',
+            borderWidth: 1.5,
+            borderDash: [5, 3],
+            pointBackgroundColor: '#34D399',
+            pointRadius: 3,
+            pointHoverRadius: 5,
+            tension: 0.35,
+            fill: false,
+            yAxisID: 'y1'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: { color: '#94A3B8', usePointStyle: true, padding: 20, font: { size: 11 } }
+          },
+          tooltip: {
+            backgroundColor: '#1A2338',
+            titleColor: '#F0F3F8',
+            bodyColor: '#94A3B8',
+            borderColor: '#334560',
+            borderWidth: 1,
+            cornerRadius: 8,
+            padding: 12
+          }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            position: 'left',
+            reverse: true,
+            min: 0.5,
+            max: 10.5,
+            ticks: { stepSize: 1, color: '#64748B', font: { size: 11 } },
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            border: { color: '#1A2332' },
+            title: { display: true, text: '排名', color: '#94A3B8' }
+          },
+          y1: {
+            type: 'linear',
+            position: 'right',
+            min: 0,
+            max: 100,
+            ticks: { callback: v => v + '%', color: '#64748B', font: { size: 11 } },
+            grid: { display: false },
+            border: { color: '#1A2332' },
+            title: { display: true, text: '通过率', color: '#94A3B8' }
+          },
+          x: {
+            ticks: { color: '#64748B', font: { size: 11 } },
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            border: { color: '#1A2332' }
+          }
+        }
+      }
+    });
+
+    document.getElementById('modalOverlay').classList.add('active');
+  };
+
+  // Close modal
+  document.getElementById('modalClose').addEventListener('click', () => {
+    document.getElementById('modalOverlay').classList.remove('active');
+  });
+  document.getElementById('modalOverlay').addEventListener('click', function(e) {
+    if (e.target === this) this.classList.remove('active');
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('modalOverlay').classList.remove('active');
+  });
+
+  // ── Init ──
+  switchModel('fable5');
+  document.querySelector('.tab[data-model="fable5"]').classList.add('active');
+
+})();
+</script>
+
+</body>
+</html>
