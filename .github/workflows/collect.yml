@@ -1,6 +1,11 @@
 name: 每日数据采集 (每2小时)
 
 on:
+  push:
+    paths:
+      - 'site/**'
+      - 'main.py'
+      - '.github/workflows/**'
   schedule:
     # 北京时间 8:00~22:00 每2小时 → UTC
     - cron: '0 0 * * *'   # 08:00
@@ -49,7 +54,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "没有新的数据变更，跳过提交"
           else
-            git commit -m "数据采集 $(TZ='Asia/Shanghai' date +%Y-%m-%d_%H:%M)"
+            git commit -m "数据采集 $(TZ='Asia/Shanghai' date +%Y-%m-%d_%H:%M) [skip ci]"
             git push
           fi
 
