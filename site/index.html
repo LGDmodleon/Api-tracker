@@ -194,7 +194,6 @@
   }
   .tab:hover { color: var(--text-secondary); background: rgba(255,255,255,0.03); }
   .tab.active { color: #fff; background: var(--bg-elevated); }
-  .tab[data-model="fable5"].active { box-shadow: 0 0 12px var(--accent-purple-glow); }
   .tab[data-model="opus48"].active { box-shadow: 0 0 12px var(--accent-blue-glow); }
   .tab[data-model="opus46"].active { box-shadow: 0 0 12px var(--accent-green-glow); }
   .tab[data-model="gpt55"].active  { box-shadow: 0 0 12px var(--accent-amber-glow); }
@@ -202,7 +201,6 @@
     display: inline-block; width: 7px; height: 7px; border-radius: 50%;
     margin-right: 7px; vertical-align: middle; position: relative; top: -1px;
   }
-  .tab[data-model="fable5"] .tab-indicator { background: var(--accent-purple); }
   .tab[data-model="opus48"] .tab-indicator { background: var(--accent-blue); }
   .tab[data-model="opus46"] .tab-indicator { background: var(--accent-green); }
   .tab[data-model="gpt55"]  .tab-indicator { background: var(--accent-amber); }
@@ -437,7 +435,7 @@
       </div>
       <div class="stat-card">
         <div class="stat-label">追踪模型</div>
-        <div class="stat-value green">4</div>
+        <div class="stat-value green">3</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">最新采集</div>
@@ -524,15 +522,14 @@
   }
 
   const DATA = LEADERBOARD_DATA;
-  const MODEL_KEYS = ['fable5', 'opus48', 'opus46', 'gpt55'];
+  const MODEL_KEYS = ['opus48', 'opus46', 'gpt55'];
   const MODEL_COLORS = {
-    fable5: { main: '#A78BFA', glow: 'rgba(167,139,250,0.3)', bg: 'rgba(167,139,250,0.08)' },
     opus48: { main: '#60A5FA', glow: 'rgba(96,165,250,0.3)', bg: 'rgba(96,165,250,0.08)' },
     opus46: { main: '#34D399', glow: 'rgba(52,211,153,0.3)', bg: 'rgba(52,211,153,0.08)' },
     gpt55:  { main: '#FBBF24', glow: 'rgba(251,191,36,0.3)', bg: 'rgba(251,191,36,0.08)' }
   };
 
-  let currentModel = 'fable5';
+  let currentModel = 'opus48';
   let currentSort = { field: 'appearances', asc: false };
   let barChart = null;
   let trendChart = null;
@@ -919,8 +916,8 @@
   });
 
   // ── Init ──
-  switchModel('fable5');
-  document.querySelector('.tab[data-model="fable5"]').classList.add('active');
+  switchModel('opus48');
+  document.querySelector('.tab[data-model="opus48"]').classList.add('active');
 
 })();
 </script>

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 API供应商排行榜数据采集系统
-从 hvoy.ai 采集 fable5, opus48, opus46, gpt55 四个模型的每日前10名供应商
+从 hvoy.ai 采集 opus48, opus46, gpt55 三个模型的每日前10名供应商
 累积统计每个供应商进入排行榜的次数，生成可视化网站数据
 """
 
@@ -27,12 +27,6 @@ TOP_N = 10  # 每个模型取前N名
 
 # 目标模型配置
 MODELS = {
-    "fable5": {
-        "key": "fable5",
-        "displayName": "Claude Fable 5",
-        "color": "#A78BFA",
-        "icon": "sparkles"
-    },
     "opus48": {
         "key": "opus48",
         "displayName": "Claude Opus 4.8",
@@ -424,6 +418,12 @@ def main():
     elif "totalSnapshots" not in summary:
         # 兼容旧格式：按已有天数回填快照计数
         summary["totalSnapshots"] = len(summary.get("trackedDates", []))
+
+    # 清理已从 MODELS 中移除的旧模型数据
+    for key in list(summary.get("models", {}).keys()):
+        if key not in MODELS:
+            del summary["models"][key]
+            print(f"  → 已清理旧模型数据: {key}")
 
     summary = update_summary(api_data, summary)
     save_json(SUMMARY_FILE, summary)

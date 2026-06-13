@@ -22,6 +22,8 @@ permissions:
 jobs:
   collect-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     # 让 GitHub Pages 部署环境生效
     environment:
       name: github-pages

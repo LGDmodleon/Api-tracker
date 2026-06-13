@@ -1,336 +1,19 @@
 // 由 main.py 自动生成，请勿手动编辑
-// 生成时间: 2026-06-13T18:31:10+08:00
-// 追踪天数: 2
+// 生成时间: 2026-06-13T21:15:16+08:00
+// 追踪天数: 1
 const LEADERBOARD_DATA = {
-  "updatedAt": "2026-06-13T18:31:10+08:00",
+  "updatedAt": "2026-06-13T21:15:16+08:00",
   "lastFetchDate": "2026-06-13",
-  "totalDaysTracked": 2,
+  "totalDaysTracked": 1,
+  "totalSnapshots": 3,
   "trackedDates": [
-    "2026-06-12",
     "2026-06-13"
   ],
   "models": {
-    "fable5": {
-      "displayName": "Claude Fable 5",
-      "color": "#A78BFA",
-      "totalVendors": 10,
-      "vendors": [
-        {
-          "relaySiteId": "40175",
-          "site": "云渡",
-          "siteDomain": "yundu.lat",
-          "channel": "cc-max-稳定官池",
-          "displayName": "cc-max-稳定官池",
-          "siteUrl": "https://yundu.lat/register",
-          "verificationType": "personal",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 1,
-              "passRate": 97.8,
-              "onlineRate": 95.7,
-              "errorRate": 4.3,
-              "avgLatencyS": 5.9,
-              "latestInputPriceCny": 19,
-              "tokenUsageRatio": 1.2607,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 1,
-          "worstRank": 1,
-          "latestPassRate": 97.8,
-          "latestOnlineRate": 95.7,
-          "latestAvgLatencyS": 5.9,
-          "latestInputPriceCny": 19,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "40246",
-          "site": "Green Mountain青山",
-          "siteDomain": "zz.aigm99.cn",
-          "channel": "CC官转max自营 可外接",
-          "displayName": "CC官转max自营 可外接",
-          "siteUrl": "https://zz.aigm99.cn/sign-up",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 2,
-              "passRate": 100,
-              "onlineRate": 95.7,
-              "errorRate": 4.3,
-              "avgLatencyS": 5.9,
-              "latestInputPriceCny": 12,
-              "tokenUsageRatio": 1.0601,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 2,
-          "worstRank": 2,
-          "latestPassRate": 100,
-          "latestOnlineRate": 95.7,
-          "latestAvgLatencyS": 5.9,
-          "latestInputPriceCny": 12,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "40121",
-          "site": "我的刀盾",
-          "siteDomain": "daodunapi.com",
-          "channel": "cc-max",
-          "displayName": "cc-max",
-          "siteUrl": "https://daodunapi.com/",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 3,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 5.7,
-              "latestInputPriceCny": 12,
-              "tokenUsageRatio": 1.1028,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 3,
-          "worstRank": 3,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 5.7,
-          "latestInputPriceCny": 12,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "40222",
-          "site": "DasuApi",
-          "siteDomain": "dasuapi.com",
-          "channel": "claude max",
-          "displayName": "claude max",
-          "siteUrl": "https://dasuapi.com/",
-          "verificationType": "personal",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 4,
-              "passRate": 100,
-              "onlineRate": 95.7,
-              "errorRate": 4.3,
-              "avgLatencyS": 4,
-              "latestInputPriceCny": 10,
-              "tokenUsageRatio": 0.977,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 4,
-          "worstRank": 4,
-          "latestPassRate": 100,
-          "latestOnlineRate": 95.7,
-          "latestAvgLatencyS": 4,
-          "latestInputPriceCny": 10,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "39980",
-          "site": "灵算",
-          "siteDomain": "lingsuan.top",
-          "channel": "cc-max-满血",
-          "displayName": "cc-max-满血",
-          "siteUrl": "https://lingsuan.top/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 5,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 6.1,
-              "latestInputPriceCny": 16,
-              "tokenUsageRatio": 1.2455,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 5,
-          "worstRank": 5,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 6.1,
-          "latestInputPriceCny": 16,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "40162",
-          "site": "AutoRouter",
-          "siteDomain": "autorouter.io",
-          "channel": "ClaudeMax",
-          "displayName": "ClaudeMax",
-          "siteUrl": "https://autorouter.io/register",
-          "verificationType": "personal",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 6,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 5.4,
-              "latestInputPriceCny": 15,
-              "tokenUsageRatio": 0.9845,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 6,
-          "worstRank": 6,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 5.4,
-          "latestInputPriceCny": 15,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "39937",
-          "site": "9527code",
-          "siteDomain": "9527code.com",
-          "channel": "claude-企业",
-          "displayName": "claude-企业",
-          "siteUrl": "https://9527code.com/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 7,
-              "passRate": 79.1,
-              "onlineRate": 93.5,
-              "errorRate": 6.5,
-              "avgLatencyS": 6.2,
-              "latestInputPriceCny": 18,
-              "tokenUsageRatio": 0.963,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 7,
-          "worstRank": 7,
-          "latestPassRate": 79.1,
-          "latestOnlineRate": 93.5,
-          "latestAvgLatencyS": 6.2,
-          "latestInputPriceCny": 18,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "39850",
-          "site": "RunAPI",
-          "siteDomain": "runapi.co",
-          "channel": "claude_normal",
-          "displayName": "claude_normal",
-          "siteUrl": "https://runapi.co/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 8,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 5.3,
-              "latestInputPriceCny": 20.34,
-              "tokenUsageRatio": 0.9735,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 8,
-          "worstRank": 8,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 5.3,
-          "latestInputPriceCny": 20.34,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "39827",
-          "site": "Lumin AI",
-          "siteDomain": "ai.luminai.cc",
-          "channel": "H-Claude-Max",
-          "displayName": "H-Claude-Max",
-          "siteUrl": "https://ai.luminai.cc/register",
-          "verificationType": "",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 9,
-              "passRate": 100,
-              "onlineRate": 95.7,
-              "errorRate": 4.3,
-              "avgLatencyS": 4.8,
-              "latestInputPriceCny": 20,
-              "tokenUsageRatio": 0.941,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 9,
-          "worstRank": 9,
-          "latestPassRate": 100,
-          "latestOnlineRate": 95.7,
-          "latestAvgLatencyS": 4.8,
-          "latestInputPriceCny": 20,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "40095",
-          "site": "SudoCode",
-          "siteDomain": "sudocode.chat",
-          "channel": "CC-MAX",
-          "displayName": "CC-MAX",
-          "siteUrl": "https://sudocode.chat/sign-up",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 10,
-              "passRate": 100,
-              "onlineRate": 97.9,
-              "errorRate": 2.1,
-              "avgLatencyS": 4.4,
-              "latestInputPriceCny": 20,
-              "tokenUsageRatio": 0.9862,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 10,
-          "worstRank": 10,
-          "latestPassRate": 100,
-          "latestOnlineRate": 97.9,
-          "latestAvgLatencyS": 4.4,
-          "latestInputPriceCny": 20,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        }
-      ]
-    },
     "opus48": {
       "displayName": "Claude Opus 4.8",
       "color": "#60A5FA",
-      "totalVendors": 16,
+      "totalVendors": 17,
       "vendors": [
         {
           "relaySiteId": "40121",
@@ -342,7 +25,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 10,
               "passRate": 91.3,
               "onlineRate": 100,
@@ -362,16 +45,27 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 4,
               "tokenUsageRatio": 1.0119,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 3,
+              "passRate": 95.5,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.4,
+              "latestInputPriceCny": 4,
+              "tokenUsageRatio": 1.0122,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 2,
+          "totalAppearances": 3,
           "bestRank": 3,
           "worstRank": 10,
           "latestPassRate": 95.5,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.4,
           "latestInputPriceCny": 4,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
         {
@@ -384,7 +78,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "personal",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 4,
               "passRate": 97.8,
               "onlineRate": 95.7,
@@ -404,16 +98,27 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 3.85,
               "tokenUsageRatio": 0.9884,
               "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 7,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4,
+              "latestInputPriceCny": 3.85,
+              "tokenUsageRatio": 0.9876,
+              "sampleCount": 45
             }
           ],
-          "totalAppearances": 2,
+          "totalAppearances": 3,
           "bestRank": 4,
-          "worstRank": 6,
+          "worstRank": 7,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4,
           "latestInputPriceCny": 3.85,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
         {
@@ -426,7 +131,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 7,
               "passRate": 91.1,
               "onlineRate": 95.7,
@@ -446,16 +151,27 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 6,
               "tokenUsageRatio": 0.9808,
               "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 4,
+              "passRate": 95.5,
+              "onlineRate": 97.8,
+              "errorRate": 2.2,
+              "avgLatencyS": 3.5,
+              "latestInputPriceCny": 6,
+              "tokenUsageRatio": 0.9806,
+              "sampleCount": 45
             }
           ],
-          "totalAppearances": 2,
+          "totalAppearances": 3,
           "bestRank": 4,
           "worstRank": 7,
           "latestPassRate": 95.5,
           "latestOnlineRate": 97.8,
           "latestAvgLatencyS": 3.5,
           "latestInputPriceCny": 6,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
         {
@@ -468,7 +184,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 9,
               "passRate": 89.1,
               "onlineRate": 100,
@@ -488,48 +204,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 10.17,
               "tokenUsageRatio": 1.0602,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 9,
+              "passRate": 88.6,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.1,
+              "latestInputPriceCny": 10.17,
+              "tokenUsageRatio": 1.0603,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 2,
+          "totalAppearances": 3,
           "bestRank": 9,
           "worstRank": 9,
           "latestPassRate": 88.6,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 3.2,
+          "latestAvgLatencyS": 3.1,
           "latestInputPriceCny": 10.17,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40106",
-          "site": "ModCon",
-          "siteDomain": "modcon.top",
-          "channel": "cc-max-满血官池",
-          "displayName": "cc-max-满血官池",
-          "siteUrl": "https://modcon.top/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 1,
-              "passRate": 95.7,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 4.3,
-              "latestInputPriceCny": 8.5,
-              "tokenUsageRatio": 1.3935,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 1,
-          "worstRank": 1,
-          "latestPassRate": 95.7,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 4.3,
-          "latestInputPriceCny": 8.5,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40001",
@@ -550,48 +246,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 8,
               "tokenUsageRatio": 1.3053,
               "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 1,
+              "passRate": 95.3,
+              "onlineRate": 97.7,
+              "errorRate": 2.3,
+              "avgLatencyS": 3.8,
+              "latestInputPriceCny": 8,
+              "tokenUsageRatio": 1.3058,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 1,
           "worstRank": 1,
-          "latestPassRate": 95.5,
-          "latestOnlineRate": 97.8,
+          "latestPassRate": 95.3,
+          "latestOnlineRate": 97.7,
           "latestAvgLatencyS": 3.8,
           "latestInputPriceCny": 8,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40206",
-          "site": "tallius.ai",
-          "siteDomain": "api.tallius.ai",
-          "channel": "default",
-          "displayName": "default",
-          "siteUrl": "https://api.tallius.ai/profile",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 2,
-              "passRate": 89.1,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 5.1,
-              "latestInputPriceCny": 8.05,
-              "tokenUsageRatio": 0.9917,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 2,
-          "worstRank": 2,
-          "latestPassRate": 89.1,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 5.1,
-          "latestInputPriceCny": 8.05,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39980",
@@ -612,9 +288,20 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 8,
               "tokenUsageRatio": 2.0832,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 2,
+              "passRate": 97.7,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.8,
+              "latestInputPriceCny": 8,
+              "tokenUsageRatio": 2.0798,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 2,
           "worstRank": 2,
           "latestPassRate": 97.7,
@@ -623,68 +310,6 @@ const LEADERBOARD_DATA = {
           "latestInputPriceCny": 8,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40216",
-          "site": "XycAi(星道智能)",
-          "siteDomain": "xyc.ai",
-          "channel": "claude",
-          "displayName": "claude",
-          "siteUrl": "https://xyc.ai/sign-up",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 3,
-              "passRate": 97.9,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 4.7,
-              "latestInputPriceCny": 14.49,
-              "tokenUsageRatio": 1.4595,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 3,
-          "worstRank": 3,
-          "latestPassRate": 97.9,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 4.7,
-          "latestInputPriceCny": 14.49,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "40175",
-          "site": "云渡",
-          "siteDomain": "yundu.lat",
-          "channel": "cc-max-稳定官池",
-          "displayName": "cc-max-稳定官池",
-          "siteUrl": "https://yundu.lat/register",
-          "verificationType": "personal",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 5,
-              "passRate": 100,
-              "onlineRate": 95.7,
-              "errorRate": 4.3,
-              "avgLatencyS": 5.2,
-              "latestInputPriceCny": 9.5,
-              "tokenUsageRatio": 1.6519,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 5,
-          "worstRank": 5,
-          "latestPassRate": 100,
-          "latestOnlineRate": 95.7,
-          "latestAvgLatencyS": 5.2,
-          "latestInputPriceCny": 9.5,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40158",
@@ -705,48 +330,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 10.35,
               "tokenUsageRatio": 0.9834,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 5,
+              "passRate": 93.2,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 5.2,
+              "latestInputPriceCny": 10.35,
+              "tokenUsageRatio": 0.9828,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 5,
           "worstRank": 5,
           "latestPassRate": 93.2,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 5.1,
+          "latestAvgLatencyS": 5.2,
           "latestInputPriceCny": 10.35,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40169",
-          "site": "WorldBase.ai",
-          "siteDomain": "worldbase.ai",
-          "channel": "claude",
-          "displayName": "claude",
-          "siteUrl": "https://worldbase.ai/login",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 6,
-              "passRate": 100,
-              "onlineRate": 95.7,
-              "errorRate": 4.3,
-              "avgLatencyS": 5.8,
-              "latestInputPriceCny": 5.175,
-              "tokenUsageRatio": 0.4856,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 6,
-          "worstRank": 6,
-          "latestPassRate": 100,
-          "latestOnlineRate": 95.7,
-          "latestAvgLatencyS": 5.8,
-          "latestInputPriceCny": 5.175,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39937",
@@ -767,48 +372,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 9,
               "tokenUsageRatio": 1.041,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 6,
+              "passRate": 93,
+              "onlineRate": 97.7,
+              "errorRate": 2.3,
+              "avgLatencyS": 4.2,
+              "latestInputPriceCny": 9,
+              "tokenUsageRatio": 1.0407,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
-          "bestRank": 7,
+          "totalAppearances": 2,
+          "bestRank": 6,
           "worstRank": 7,
           "latestPassRate": 93,
           "latestOnlineRate": 97.7,
-          "latestAvgLatencyS": 4.3,
+          "latestAvgLatencyS": 4.2,
           "latestInputPriceCny": 9,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40126",
-          "site": "ClauqeAI",
-          "siteDomain": "clauqe.ai",
-          "channel": "Claude Max",
-          "displayName": "Claude Max",
-          "siteUrl": "https://api.clauqe.ai/register",
-          "verificationType": "",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 8,
-              "passRate": 97.9,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 5.4,
-              "latestInputPriceCny": 8,
-              "tokenUsageRatio": 1.0519,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 8,
-          "worstRank": 8,
-          "latestPassRate": 97.9,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 5.4,
-          "latestInputPriceCny": 8,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39842",
@@ -829,15 +414,212 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 1.001,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 8,
+              "passRate": 93.2,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.1,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 1.0018,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 8,
           "worstRank": 8,
           "latestPassRate": 93.2,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.1,
           "latestInputPriceCny": 10,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40106",
+          "site": "ModCon",
+          "siteDomain": "modcon.top",
+          "channel": "cc-max-满血官池",
+          "displayName": "cc-max-满血官池",
+          "siteUrl": "https://modcon.top/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 1,
+              "passRate": 95.7,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.3,
+              "latestInputPriceCny": 8.5,
+              "tokenUsageRatio": 1.3935,
+              "sampleCount": 46
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 1,
+          "worstRank": 1,
+          "latestPassRate": 95.7,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 4.3,
+          "latestInputPriceCny": 8.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40206",
+          "site": "tallius.ai",
+          "siteDomain": "api.tallius.ai",
+          "channel": "default",
+          "displayName": "default",
+          "siteUrl": "https://api.tallius.ai/profile",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 2,
+              "passRate": 89.1,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 5.1,
+              "latestInputPriceCny": 8.05,
+              "tokenUsageRatio": 0.9917,
+              "sampleCount": 46
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 2,
+          "worstRank": 2,
+          "latestPassRate": 89.1,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 5.1,
+          "latestInputPriceCny": 8.05,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40216",
+          "site": "XycAi(星道智能)",
+          "siteDomain": "xyc.ai",
+          "channel": "claude",
+          "displayName": "claude",
+          "siteUrl": "https://xyc.ai/sign-up",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 3,
+              "passRate": 97.9,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.7,
+              "latestInputPriceCny": 14.49,
+              "tokenUsageRatio": 1.4595,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 3,
+          "worstRank": 3,
+          "latestPassRate": 97.9,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 4.7,
+          "latestInputPriceCny": 14.49,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40175",
+          "site": "云渡",
+          "siteDomain": "yundu.lat",
+          "channel": "cc-max-稳定官池",
+          "displayName": "cc-max-稳定官池",
+          "siteUrl": "https://yundu.lat/register",
+          "verificationType": "personal",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 5,
+              "passRate": 100,
+              "onlineRate": 95.7,
+              "errorRate": 4.3,
+              "avgLatencyS": 5.2,
+              "latestInputPriceCny": 9.5,
+              "tokenUsageRatio": 1.6519,
+              "sampleCount": 46
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 5,
+          "worstRank": 5,
+          "latestPassRate": 100,
+          "latestOnlineRate": 95.7,
+          "latestAvgLatencyS": 5.2,
+          "latestInputPriceCny": 9.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40169",
+          "site": "WorldBase.ai",
+          "siteDomain": "worldbase.ai",
+          "channel": "claude",
+          "displayName": "claude",
+          "siteUrl": "https://worldbase.ai/login",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 6,
+              "passRate": 100,
+              "onlineRate": 95.7,
+              "errorRate": 4.3,
+              "avgLatencyS": 5.8,
+              "latestInputPriceCny": 5.175,
+              "tokenUsageRatio": 0.4856,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 6,
+          "worstRank": 6,
+          "latestPassRate": 100,
+          "latestOnlineRate": 95.7,
+          "latestAvgLatencyS": 5.8,
+          "latestInputPriceCny": 5.175,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40126",
+          "site": "ClauqeAI",
+          "siteDomain": "clauqe.ai",
+          "channel": "Claude Max",
+          "displayName": "Claude Max",
+          "siteUrl": "https://api.clauqe.ai/register",
+          "verificationType": "",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 8,
+              "passRate": 97.9,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 5.4,
+              "latestInputPriceCny": 8,
+              "tokenUsageRatio": 1.0519,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 8,
+          "worstRank": 8,
+          "latestPassRate": 97.9,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 5.4,
+          "latestInputPriceCny": 8,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
@@ -871,13 +653,44 @@ const LEADERBOARD_DATA = {
           "latestInputPriceCny": 8.5,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39946",
+          "site": "MuskAI",
+          "siteDomain": "api.muskapi.cc",
+          "channel": "Claude-AZ&AWS",
+          "displayName": "Claude-AZ&AWS",
+          "siteUrl": "https://api.muskapi.cc/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 10,
+              "passRate": 90.9,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 5.9,
+              "latestInputPriceCny": 6.25,
+              "tokenUsageRatio": 2.269,
+              "sampleCount": 44
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 10,
+          "worstRank": 10,
+          "latestPassRate": 90.9,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 5.9,
+          "latestInputPriceCny": 6.25,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
         }
       ]
     },
     "opus46": {
       "displayName": "Claude Opus 4.6",
       "color": "#34D399",
-      "totalVendors": 15,
+      "totalVendors": 17,
       "vendors": [
         {
           "relaySiteId": "40158",
@@ -889,7 +702,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 2,
               "passRate": 100,
               "onlineRate": 100,
@@ -909,16 +722,27 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 10.35,
               "tokenUsageRatio": 1.0097,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 3,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4,
+              "latestInputPriceCny": 10.35,
+              "tokenUsageRatio": 1.0084,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 2,
+          "totalAppearances": 3,
           "bestRank": 2,
           "worstRank": 4,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4,
           "latestInputPriceCny": 10.35,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
         {
@@ -931,7 +755,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 3,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -951,58 +775,27 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 6,
               "tokenUsageRatio": 0.9915,
               "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 2,
+              "passRate": 100,
+              "onlineRate": 97.8,
+              "errorRate": 2.2,
+              "avgLatencyS": 3.6,
+              "latestInputPriceCny": 6,
+              "tokenUsageRatio": 0.9901,
+              "sampleCount": 45
             }
           ],
-          "totalAppearances": 2,
-          "bestRank": 3,
+          "totalAppearances": 3,
+          "bestRank": 2,
           "worstRank": 5,
           "latestPassRate": 100,
           "latestOnlineRate": 97.8,
           "latestAvgLatencyS": 3.6,
           "latestInputPriceCny": 6,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "39850",
-          "site": "RunAPI",
-          "siteDomain": "runapi.co",
-          "channel": "coding",
-          "displayName": "coding",
-          "siteUrl": "https://runapi.co/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 6,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 4.1,
-              "latestInputPriceCny": 10.17,
-              "tokenUsageRatio": 1.1094,
-              "sampleCount": 47
-            },
-            {
-              "date": "2026-06-13",
-              "rank": 8,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 3.4,
-              "latestInputPriceCny": 10.17,
-              "tokenUsageRatio": 1.2011,
-              "sampleCount": 44
-            }
-          ],
-          "totalAppearances": 2,
-          "bestRank": 6,
-          "worstRank": 8,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 3.4,
-          "latestInputPriceCny": 10.17,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
         {
@@ -1015,7 +808,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "personal",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 7,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -1035,16 +828,80 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 3.85,
               "tokenUsageRatio": 0.9822,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 5,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.9,
+              "latestInputPriceCny": 3.85,
+              "tokenUsageRatio": 0.9814,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 2,
-          "bestRank": 6,
+          "totalAppearances": 3,
+          "bestRank": 5,
           "worstRank": 7,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.9,
           "latestInputPriceCny": 3.85,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39850",
+          "site": "RunAPI",
+          "siteDomain": "runapi.co",
+          "channel": "coding",
+          "displayName": "coding",
+          "siteUrl": "https://runapi.co/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 6,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.1,
+              "latestInputPriceCny": 10.17,
+              "tokenUsageRatio": 1.1094,
+              "sampleCount": 47
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 8,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.4,
+              "latestInputPriceCny": 10.17,
+              "tokenUsageRatio": 1.2011,
+              "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 9,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.4,
+              "latestInputPriceCny": 10.17,
+              "tokenUsageRatio": 1.1995,
+              "sampleCount": 45
+            }
+          ],
+          "totalAppearances": 3,
+          "bestRank": 6,
+          "worstRank": 9,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 3.4,
+          "latestInputPriceCny": 10.17,
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
         {
@@ -1057,7 +914,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 8,
               "passRate": 100,
               "onlineRate": 100,
@@ -1077,48 +934,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 1.0458,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 8,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.5,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 1.0465,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 2,
+          "totalAppearances": 3,
           "bestRank": 7,
           "worstRank": 8,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 3.5,
           "latestInputPriceCny": 10,
-          "firstSeen": "2026-06-12",
+          "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40206",
-          "site": "tallius.ai",
-          "siteDomain": "api.tallius.ai",
-          "channel": "default",
-          "displayName": "default",
-          "siteUrl": "https://api.tallius.ai/profile",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 1,
-              "passRate": 100,
-              "onlineRate": 97.8,
-              "errorRate": 2.2,
-              "avgLatencyS": 4.7,
-              "latestInputPriceCny": 8.05,
-              "tokenUsageRatio": 1.0012,
-              "sampleCount": 46
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 1,
-          "worstRank": 1,
-          "latestPassRate": 100,
-          "latestOnlineRate": 97.8,
-          "latestAvgLatencyS": 4.7,
-          "latestInputPriceCny": 8.05,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39937",
@@ -1139,15 +976,141 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 7.5,
               "tokenUsageRatio": 0.989,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 1,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.9,
+              "latestInputPriceCny": 7.5,
+              "tokenUsageRatio": 1.0266,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 1,
           "worstRank": 1,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4.9,
           "latestInputPriceCny": 7.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40106",
+          "site": "ModCon",
+          "siteDomain": "modcon.top",
+          "channel": "cc-max-满血官池",
+          "displayName": "cc-max-满血官池",
+          "siteUrl": "https://modcon.top/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 3,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.2,
+              "latestInputPriceCny": 8.5,
+              "tokenUsageRatio": 1.5262,
+              "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 4,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.2,
+              "latestInputPriceCny": 8.5,
+              "tokenUsageRatio": 1.5235,
+              "sampleCount": 44
+            }
+          ],
+          "totalAppearances": 2,
+          "bestRank": 3,
+          "worstRank": 4,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 4.2,
+          "latestInputPriceCny": 8.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40208",
+          "site": "ToolCode",
+          "siteDomain": "toolcode.top",
+          "channel": "CC-Max-满血",
+          "displayName": "CC-Max-满血",
+          "siteUrl": "https://toolcode.top/register",
+          "verificationType": "personal",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 9,
+              "passRate": 100,
+              "onlineRate": 97.7,
+              "errorRate": 2.3,
+              "avgLatencyS": 4.4,
+              "latestInputPriceCny": 8.5,
+              "tokenUsageRatio": 1.6129,
+              "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 7,
+              "passRate": 100,
+              "onlineRate": 97.7,
+              "errorRate": 2.3,
+              "avgLatencyS": 4.5,
+              "latestInputPriceCny": 8.5,
+              "tokenUsageRatio": 1.6144,
+              "sampleCount": 44
+            }
+          ],
+          "totalAppearances": 2,
+          "bestRank": 7,
+          "worstRank": 9,
+          "latestPassRate": 100,
+          "latestOnlineRate": 97.7,
+          "latestAvgLatencyS": 4.5,
+          "latestInputPriceCny": 8.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40206",
+          "site": "tallius.ai",
+          "siteDomain": "api.tallius.ai",
+          "channel": "default",
+          "displayName": "default",
+          "siteUrl": "https://api.tallius.ai/profile",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 1,
+              "passRate": 100,
+              "onlineRate": 97.8,
+              "errorRate": 2.2,
+              "avgLatencyS": 4.7,
+              "latestInputPriceCny": 8.05,
+              "tokenUsageRatio": 1.0012,
+              "sampleCount": 46
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 1,
+          "worstRank": 1,
+          "latestPassRate": 100,
+          "latestOnlineRate": 97.8,
+          "latestAvgLatencyS": 4.7,
+          "latestInputPriceCny": 8.05,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
@@ -1183,37 +1146,6 @@ const LEADERBOARD_DATA = {
           "lastSeen": "2026-06-13"
         },
         {
-          "relaySiteId": "40106",
-          "site": "ModCon",
-          "siteDomain": "modcon.top",
-          "channel": "cc-max-满血官池",
-          "displayName": "cc-max-满血官池",
-          "siteUrl": "https://modcon.top/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-13",
-              "rank": 3,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 4.2,
-              "latestInputPriceCny": 8.5,
-              "tokenUsageRatio": 1.5262,
-              "sampleCount": 44
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 3,
-          "worstRank": 3,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 4.2,
-          "latestInputPriceCny": 8.5,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
-        },
-        {
           "relaySiteId": "40169",
           "site": "WorldBase.ai",
           "siteDomain": "worldbase.ai",
@@ -1223,7 +1155,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 4,
               "passRate": 100,
               "onlineRate": 97.9,
@@ -1241,8 +1173,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 97.9,
           "latestAvgLatencyS": 3.1,
           "latestInputPriceCny": 5.175,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
         },
         {
           "relaySiteId": "40175",
@@ -1254,7 +1186,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "personal",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 5,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -1272,8 +1204,39 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 95.7,
           "latestAvgLatencyS": 5,
           "latestInputPriceCny": 9.5,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39795",
+          "site": "Chintao AI",
+          "siteDomain": "chintao.cn",
+          "channel": "claude-awsq",
+          "displayName": "claude-awsq",
+          "siteUrl": "https://chintao.cn/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 6,
+              "passRate": 79.1,
+              "onlineRate": 97.7,
+              "errorRate": 2.3,
+              "avgLatencyS": 3.9,
+              "latestInputPriceCny": 4.8,
+              "tokenUsageRatio": 0.8532,
+              "sampleCount": 44
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 6,
+          "worstRank": 6,
+          "latestPassRate": 79.1,
+          "latestOnlineRate": 97.7,
+          "latestAvgLatencyS": 3.9,
+          "latestInputPriceCny": 4.8,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
         },
         {
           "relaySiteId": "40123",
@@ -1285,7 +1248,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 9,
               "passRate": 100,
               "onlineRate": 100,
@@ -1303,37 +1266,6 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 7.1,
           "latestInputPriceCny": 4.5567,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "40208",
-          "site": "ToolCode",
-          "siteDomain": "toolcode.top",
-          "channel": "CC-Max-满血",
-          "displayName": "CC-Max-满血",
-          "siteUrl": "https://toolcode.top/register",
-          "verificationType": "personal",
-          "appearances": [
-            {
-              "date": "2026-06-13",
-              "rank": 9,
-              "passRate": 100,
-              "onlineRate": 97.7,
-              "errorRate": 2.3,
-              "avgLatencyS": 4.4,
-              "latestInputPriceCny": 8.5,
-              "tokenUsageRatio": 1.6129,
-              "sampleCount": 44
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 9,
-          "worstRank": 9,
-          "latestPassRate": 100,
-          "latestOnlineRate": 97.7,
-          "latestAvgLatencyS": 4.4,
-          "latestInputPriceCny": 8.5,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
@@ -1347,7 +1279,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 10,
               "passRate": 100,
               "onlineRate": 95.7,
@@ -1365,8 +1297,8 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 95.7,
           "latestAvgLatencyS": 5.9,
           "latestInputPriceCny": 9,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
         },
         {
           "relaySiteId": "39801",
@@ -1398,14 +1330,182 @@ const LEADERBOARD_DATA = {
           "latestInputPriceCny": 7.5,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39799",
+          "site": "ClaudeCN",
+          "siteDomain": "claudecn.top",
+          "channel": "ClaudeCode--MAX分组",
+          "displayName": "ClaudeCode--MAX分组",
+          "siteUrl": "https://claudecn.top/register",
+          "verificationType": "",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 10,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.8,
+              "latestInputPriceCny": 8,
+              "tokenUsageRatio": 1.1238,
+              "sampleCount": 45
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 10,
+          "worstRank": 10,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 4.8,
+          "latestInputPriceCny": 8,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
         }
       ]
     },
     "gpt55": {
       "displayName": "GPT-5.5",
       "color": "#FBBF24",
-      "totalVendors": 18,
+      "totalVendors": 19,
       "vendors": [
+        {
+          "relaySiteId": "40169",
+          "site": "WorldBase.ai",
+          "siteDomain": "worldbase.ai",
+          "channel": "openai",
+          "displayName": "openai",
+          "siteUrl": "https://worldbase.ai/login",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 10,
+              "passRate": 100,
+              "onlineRate": 97.9,
+              "errorRate": 2.1,
+              "avgLatencyS": 9.1,
+              "latestInputPriceCny": 3.45,
+              "tokenUsageRatio": 0.6169,
+              "sampleCount": 47
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 10,
+              "passRate": 100,
+              "onlineRate": 97.8,
+              "errorRate": 2.2,
+              "avgLatencyS": 8.6,
+              "latestInputPriceCny": 3.45,
+              "tokenUsageRatio": 0.5816,
+              "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 10,
+              "passRate": 100,
+              "onlineRate": 97.8,
+              "errorRate": 2.2,
+              "avgLatencyS": 8.6,
+              "latestInputPriceCny": 3.45,
+              "tokenUsageRatio": 0.5819,
+              "sampleCount": 45
+            }
+          ],
+          "totalAppearances": 3,
+          "bestRank": 10,
+          "worstRank": 10,
+          "latestPassRate": 100,
+          "latestOnlineRate": 97.8,
+          "latestAvgLatencyS": 8.6,
+          "latestInputPriceCny": 3.45,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39946",
+          "site": "MuskAI",
+          "siteDomain": "api.muskapi.cc",
+          "channel": "Codex-企业级",
+          "displayName": "Codex-企业级",
+          "siteUrl": "https://api.muskapi.cc/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 1,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 6.2,
+              "latestInputPriceCny": 2,
+              "tokenUsageRatio": 0.1042,
+              "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 1,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 6.1,
+              "latestInputPriceCny": 2,
+              "tokenUsageRatio": 0.1041,
+              "sampleCount": 45
+            }
+          ],
+          "totalAppearances": 2,
+          "bestRank": 1,
+          "worstRank": 1,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 6.1,
+          "latestInputPriceCny": 2,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39975",
+          "site": "YKH.AI",
+          "siteDomain": "api.ykh.ai",
+          "channel": "大客户专用",
+          "displayName": "大客户专用",
+          "siteUrl": "https://api.ykh.ai/sign-up",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 2,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.5,
+              "latestInputPriceCny": 2.5,
+              "tokenUsageRatio": 1.4284,
+              "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 3,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.5,
+              "latestInputPriceCny": 2.5,
+              "tokenUsageRatio": 1.4278,
+              "sampleCount": 45
+            }
+          ],
+          "totalAppearances": 2,
+          "bestRank": 2,
+          "worstRank": 3,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 7.5,
+          "latestInputPriceCny": 2.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
         {
           "relaySiteId": "40007",
           "site": "luchikey",
@@ -1416,7 +1516,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 3,
               "passRate": 100,
               "onlineRate": 100,
@@ -1445,172 +1545,6 @@ const LEADERBOARD_DATA = {
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 11,
           "latestInputPriceCny": 1.44,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40169",
-          "site": "WorldBase.ai",
-          "siteDomain": "worldbase.ai",
-          "channel": "openai",
-          "displayName": "openai",
-          "siteUrl": "https://worldbase.ai/login",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 10,
-              "passRate": 100,
-              "onlineRate": 97.9,
-              "errorRate": 2.1,
-              "avgLatencyS": 9.1,
-              "latestInputPriceCny": 3.45,
-              "tokenUsageRatio": 0.6169,
-              "sampleCount": 47
-            },
-            {
-              "date": "2026-06-13",
-              "rank": 10,
-              "passRate": 100,
-              "onlineRate": 97.8,
-              "errorRate": 2.2,
-              "avgLatencyS": 8.6,
-              "latestInputPriceCny": 3.45,
-              "tokenUsageRatio": 0.5816,
-              "sampleCount": 45
-            }
-          ],
-          "totalAppearances": 2,
-          "bestRank": 10,
-          "worstRank": 10,
-          "latestPassRate": 100,
-          "latestOnlineRate": 97.8,
-          "latestAvgLatencyS": 8.6,
-          "latestInputPriceCny": 3.45,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40239",
-          "site": "橙芯算力",
-          "siteDomain": "api.whlemon.cn",
-          "channel": "OpenAI-5xpro用量",
-          "displayName": "OpenAI-5xpro用量",
-          "siteUrl": "https://api.whlemon.cn/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 1,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 9.3,
-              "latestInputPriceCny": 5,
-              "tokenUsageRatio": 1.4649,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 1,
-          "worstRank": 1,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 9.3,
-          "latestInputPriceCny": 5,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "39946",
-          "site": "MuskAI",
-          "siteDomain": "api.muskapi.cc",
-          "channel": "Codex-企业级",
-          "displayName": "Codex-企业级",
-          "siteUrl": "https://api.muskapi.cc/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-13",
-              "rank": 1,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 6.2,
-              "latestInputPriceCny": 2,
-              "tokenUsageRatio": 0.1042,
-              "sampleCount": 45
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 1,
-          "worstRank": 1,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 6.2,
-          "latestInputPriceCny": 2,
-          "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40178",
-          "site": "RK API",
-          "siteDomain": "api.rkai6.com",
-          "channel": "Codex-Pro",
-          "displayName": "Codex-Pro",
-          "siteUrl": "https://api.rkai6.com/sign-up",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 2,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 9.8,
-              "latestInputPriceCny": 2.5,
-              "tokenUsageRatio": 1.394,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 2,
-          "worstRank": 2,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 9.8,
-          "latestInputPriceCny": 2.5,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "39975",
-          "site": "YKH.AI",
-          "siteDomain": "api.ykh.ai",
-          "channel": "大客户专用",
-          "displayName": "大客户专用",
-          "siteUrl": "https://api.ykh.ai/sign-up",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-13",
-              "rank": 2,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 7.5,
-              "latestInputPriceCny": 2.5,
-              "tokenUsageRatio": 1.4284,
-              "sampleCount": 45
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 2,
-          "worstRank": 2,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 7.5,
-          "latestInputPriceCny": 2.5,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
         },
@@ -1633,48 +1567,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 5.1,
               "tokenUsageRatio": 0.5118,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 4,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.6,
+              "latestInputPriceCny": 5.1,
+              "tokenUsageRatio": 0.5094,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 3,
-          "worstRank": 3,
+          "worstRank": 4,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 7.7,
+          "latestAvgLatencyS": 7.6,
           "latestInputPriceCny": 5.1,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40001",
-          "site": "词易",
-          "siteDomain": "chiyicn.com",
-          "channel": "gt-pro",
-          "displayName": "gt-pro",
-          "siteUrl": "https://chiyicn.com/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 4,
-              "passRate": 100,
-              "onlineRate": 95.7,
-              "errorRate": 4.3,
-              "avgLatencyS": 9.9,
-              "latestInputPriceCny": 1.2,
-              "tokenUsageRatio": 1.2347,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 4,
-          "worstRank": 4,
-          "latestPassRate": 100,
-          "latestOnlineRate": 95.7,
-          "latestAvgLatencyS": 9.9,
-          "latestInputPriceCny": 1.2,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39937",
@@ -1695,79 +1609,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 1.9,
               "tokenUsageRatio": 0.7099,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 5,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.3,
+              "latestInputPriceCny": 1.9,
+              "tokenUsageRatio": 0.7078,
+              "sampleCount": 45
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 4,
-          "worstRank": 4,
+          "worstRank": 5,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 9.3,
           "latestInputPriceCny": 1.9,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "40009",
-          "site": "AOK",
-          "siteDomain": "aokapi.com",
-          "channel": "Codex-专用",
-          "displayName": "Codex-专用",
-          "siteUrl": "https://aokapi.com/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 5,
-              "passRate": 97.9,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 10.2,
-              "latestInputPriceCny": 1.75,
-              "tokenUsageRatio": 0.605,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 5,
-          "worstRank": 5,
-          "latestPassRate": 97.9,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 10.2,
-          "latestInputPriceCny": 1.75,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
-        },
-        {
-          "relaySiteId": "39850",
-          "site": "RunAPI",
-          "siteDomain": "runapi.co",
-          "channel": "codex",
-          "displayName": "codex",
-          "siteUrl": "https://runapi.co/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 6,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 9.9,
-              "latestInputPriceCny": 3.39,
-              "tokenUsageRatio": 0.7329,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 6,
-          "worstRank": 6,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 9.9,
-          "latestInputPriceCny": 3.39,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39799",
@@ -1788,48 +1651,28 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 2.5,
               "tokenUsageRatio": 1.0685,
               "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 7,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.6,
+              "latestInputPriceCny": 2.5,
+              "tokenUsageRatio": 1.0682,
+              "sampleCount": 45
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 6,
-          "worstRank": 6,
+          "worstRank": 7,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 7.6,
           "latestInputPriceCny": 2.5,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "39921",
-          "site": "球球Token",
-          "siteDomain": "qiuqiutoken.com",
-          "channel": "CodeX专用-Pro号池-稳定",
-          "displayName": "CodeX专用-Pro号池-稳定",
-          "siteUrl": "https://qiuqiutoken.com/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 7,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 9.1,
-              "latestInputPriceCny": 1.9,
-              "tokenUsageRatio": 0.5356,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 7,
-          "worstRank": 7,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 9.1,
-          "latestInputPriceCny": 1.9,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "39795",
@@ -1850,10 +1693,21 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 3.5,
               "tokenUsageRatio": 1.3956,
               "sampleCount": 45
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 6,
+              "passRate": 97.7,
+              "onlineRate": 97.8,
+              "errorRate": 2.2,
+              "avgLatencyS": 7.8,
+              "latestInputPriceCny": 3.5,
+              "tokenUsageRatio": 1.387,
+              "sampleCount": 45
             }
           ],
-          "totalAppearances": 1,
-          "bestRank": 7,
+          "totalAppearances": 2,
+          "bestRank": 6,
           "worstRank": 7,
           "latestPassRate": 97.7,
           "latestOnlineRate": 97.8,
@@ -1861,37 +1715,6 @@ const LEADERBOARD_DATA = {
           "latestInputPriceCny": 3.5,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
-        },
-        {
-          "relaySiteId": "39980",
-          "site": "灵算",
-          "siteDomain": "lingsuan.top",
-          "channel": "cx-pro",
-          "displayName": "cx-pro",
-          "siteUrl": "https://lingsuan.top/register",
-          "verificationType": "enterprise",
-          "appearances": [
-            {
-              "date": "2026-06-12",
-              "rank": 8,
-              "passRate": 100,
-              "onlineRate": 100,
-              "errorRate": 0,
-              "avgLatencyS": 9.9,
-              "latestInputPriceCny": 1.2,
-              "tokenUsageRatio": 0.7823,
-              "sampleCount": 47
-            }
-          ],
-          "totalAppearances": 1,
-          "bestRank": 8,
-          "worstRank": 8,
-          "latestPassRate": 100,
-          "latestOnlineRate": 100,
-          "latestAvgLatencyS": 9.9,
-          "latestInputPriceCny": 1.2,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
         },
         {
           "relaySiteId": "40123",
@@ -1912,14 +1735,25 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 4.5904,
               "tokenUsageRatio": 1.5478,
               "sampleCount": 44
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 8,
+              "passRate": 100,
+              "onlineRate": 97.7,
+              "errorRate": 2.3,
+              "avgLatencyS": 15.4,
+              "latestInputPriceCny": 4.5904,
+              "tokenUsageRatio": 1.5463,
+              "sampleCount": 44
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 8,
           "worstRank": 8,
           "latestPassRate": 100,
           "latestOnlineRate": 97.7,
-          "latestAvgLatencyS": 15.5,
+          "latestAvgLatencyS": 15.4,
           "latestInputPriceCny": 4.5904,
           "firstSeen": "2026-06-13",
           "lastSeen": "2026-06-13"
@@ -1934,7 +1768,7 @@ const LEADERBOARD_DATA = {
           "verificationType": "enterprise",
           "appearances": [
             {
-              "date": "2026-06-12",
+              "date": "2026-06-13",
               "rank": 9,
               "passRate": 100,
               "onlineRate": 100,
@@ -1943,17 +1777,276 @@ const LEADERBOARD_DATA = {
               "latestInputPriceCny": 1,
               "tokenUsageRatio": 0.3013,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-13",
+              "rank": 9,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 6.9,
+              "latestInputPriceCny": 1,
+              "tokenUsageRatio": 0.2844,
+              "sampleCount": 45
             }
           ],
-          "totalAppearances": 1,
+          "totalAppearances": 2,
           "bestRank": 9,
           "worstRank": 9,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 7.1,
+          "latestAvgLatencyS": 6.9,
           "latestInputPriceCny": 1,
-          "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-12"
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40239",
+          "site": "橙芯算力",
+          "siteDomain": "api.whlemon.cn",
+          "channel": "OpenAI-5xpro用量",
+          "displayName": "OpenAI-5xpro用量",
+          "siteUrl": "https://api.whlemon.cn/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 1,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.3,
+              "latestInputPriceCny": 5,
+              "tokenUsageRatio": 1.4649,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 1,
+          "worstRank": 1,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 9.3,
+          "latestInputPriceCny": 5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40178",
+          "site": "RK API",
+          "siteDomain": "api.rkai6.com",
+          "channel": "Codex-Pro",
+          "displayName": "Codex-Pro",
+          "siteUrl": "https://api.rkai6.com/sign-up",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 2,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.8,
+              "latestInputPriceCny": 2.5,
+              "tokenUsageRatio": 1.394,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 2,
+          "worstRank": 2,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 9.8,
+          "latestInputPriceCny": 2.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40106",
+          "site": "ModCon",
+          "siteDomain": "modcon.top",
+          "channel": "codex-pro-官池",
+          "displayName": "codex-pro-官池",
+          "siteUrl": "https://modcon.top/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 2,
+              "passRate": 100,
+              "onlineRate": 97.8,
+              "errorRate": 2.2,
+              "avgLatencyS": 7.4,
+              "latestInputPriceCny": 1.5,
+              "tokenUsageRatio": 1.2256,
+              "sampleCount": 45
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 2,
+          "worstRank": 2,
+          "latestPassRate": 100,
+          "latestOnlineRate": 97.8,
+          "latestAvgLatencyS": 7.4,
+          "latestInputPriceCny": 1.5,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40001",
+          "site": "词易",
+          "siteDomain": "chiyicn.com",
+          "channel": "gt-pro",
+          "displayName": "gt-pro",
+          "siteUrl": "https://chiyicn.com/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 4,
+              "passRate": 100,
+              "onlineRate": 95.7,
+              "errorRate": 4.3,
+              "avgLatencyS": 9.9,
+              "latestInputPriceCny": 1.2,
+              "tokenUsageRatio": 1.2347,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 4,
+          "worstRank": 4,
+          "latestPassRate": 100,
+          "latestOnlineRate": 95.7,
+          "latestAvgLatencyS": 9.9,
+          "latestInputPriceCny": 1.2,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "40009",
+          "site": "AOK",
+          "siteDomain": "aokapi.com",
+          "channel": "Codex-专用",
+          "displayName": "Codex-专用",
+          "siteUrl": "https://aokapi.com/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 5,
+              "passRate": 97.9,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 10.2,
+              "latestInputPriceCny": 1.75,
+              "tokenUsageRatio": 0.605,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 5,
+          "worstRank": 5,
+          "latestPassRate": 97.9,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 10.2,
+          "latestInputPriceCny": 1.75,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39850",
+          "site": "RunAPI",
+          "siteDomain": "runapi.co",
+          "channel": "codex",
+          "displayName": "codex",
+          "siteUrl": "https://runapi.co/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 6,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.9,
+              "latestInputPriceCny": 3.39,
+              "tokenUsageRatio": 0.7329,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 6,
+          "worstRank": 6,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 9.9,
+          "latestInputPriceCny": 3.39,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39921",
+          "site": "球球Token",
+          "siteDomain": "qiuqiutoken.com",
+          "channel": "CodeX专用-Pro号池-稳定",
+          "displayName": "CodeX专用-Pro号池-稳定",
+          "siteUrl": "https://qiuqiutoken.com/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 7,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.1,
+              "latestInputPriceCny": 1.9,
+              "tokenUsageRatio": 0.5356,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 7,
+          "worstRank": 7,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 9.1,
+          "latestInputPriceCny": 1.9,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
+        },
+        {
+          "relaySiteId": "39980",
+          "site": "灵算",
+          "siteDomain": "lingsuan.top",
+          "channel": "cx-pro",
+          "displayName": "cx-pro",
+          "siteUrl": "https://lingsuan.top/register",
+          "verificationType": "enterprise",
+          "appearances": [
+            {
+              "date": "2026-06-13",
+              "rank": 8,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.9,
+              "latestInputPriceCny": 1.2,
+              "tokenUsageRatio": 0.7823,
+              "sampleCount": 47
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 8,
+          "worstRank": 8,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 9.9,
+          "latestInputPriceCny": 1.2,
+          "firstSeen": "2026-06-13",
+          "lastSeen": "2026-06-13"
         },
         {
           "relaySiteId": "39812",
