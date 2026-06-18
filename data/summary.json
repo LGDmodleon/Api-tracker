@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-18T22:50:50+08:00",
-  "lastFetchDate": "2026-06-18",
-  "totalDaysTracked": 7,
-  "totalSnapshots": 44,
+  "updatedAt": "2026-06-19T00:49:06+08:00",
+  "lastFetchDate": "2026-06-19",
+  "totalDaysTracked": 8,
+  "totalSnapshots": 45,
   "trackedDates": [
     "2026-06-12",
     "2026-06-13",
@@ -10,7 +10,8 @@
     "2026-06-15",
     "2026-06-16",
     "2026-06-17",
-    "2026-06-18"
+    "2026-06-18",
+    "2026-06-19"
   ],
   "models": {
     "opus48": {
@@ -573,17 +574,28 @@
               "latestInputPriceCny": 8.05,
               "tokenUsageRatio": 0.9924,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 4,
+              "passRate": 84.8,
+              "onlineRate": 97.9,
+              "errorRate": 2.1,
+              "avgLatencyS": 3.9,
+              "latestInputPriceCny": 8.05,
+              "tokenUsageRatio": 0.963,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 32,
+          "totalAppearances": 33,
           "bestRank": 1,
           "worstRank": 9,
           "latestPassRate": 84.8,
           "latestOnlineRate": 97.9,
-          "latestAvgLatencyS": 3.7,
+          "latestAvgLatencyS": 3.9,
           "latestInputPriceCny": 8.05,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40216": {
           "relaySiteId": "40216",
@@ -1086,9 +1098,20 @@
               "latestInputPriceCny": 4,
               "tokenUsageRatio": 1.0125,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 6,
+              "passRate": 93.5,
+              "onlineRate": 97.9,
+              "errorRate": 2.1,
+              "avgLatencyS": 4.5,
+              "latestInputPriceCny": 4,
+              "tokenUsageRatio": 1.0107,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 42,
+          "totalAppearances": 43,
           "bestRank": 1,
           "worstRank": 10,
           "latestPassRate": 93.5,
@@ -1096,7 +1119,7 @@
           "latestAvgLatencyS": 4.5,
           "latestInputPriceCny": 4,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40175": {
           "relaySiteId": "40175",
@@ -2597,17 +2620,28 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 0.9897,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 7,
+              "passRate": 95.7,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.4,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 0.9853,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 9,
+          "totalAppearances": 10,
           "bestRank": 4,
           "worstRank": 10,
           "latestPassRate": 95.7,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 3.5,
+          "latestAvgLatencyS": 3.4,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "39937": {
           "relaySiteId": "39937",
@@ -3352,17 +3386,28 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 0.9904,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 2,
+              "passRate": 97.9,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.3,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 0.9902,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 40,
+          "totalAppearances": 41,
           "bestRank": 1,
           "worstRank": 9,
           "latestPassRate": 97.9,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 3.4,
+          "latestAvgLatencyS": 3.3,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "39783": {
           "relaySiteId": "39783",
@@ -4398,17 +4443,28 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 1.1238,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 5,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.2,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 1.0311,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 14,
+          "totalAppearances": 15,
           "bestRank": 4,
           "worstRank": 10,
-          "latestPassRate": 97.9,
+          "latestPassRate": 100,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4.2,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-14",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "39801": {
           "relaySiteId": "39801",
@@ -4790,17 +4846,28 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 0.9908,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 3,
+              "passRate": 93.6,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.3,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 0.9947,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 26,
+          "totalAppearances": 27,
           "bestRank": 1,
           "worstRank": 9,
-          "latestPassRate": 95.7,
+          "latestPassRate": 93.6,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 3.4,
+          "latestAvgLatencyS": 3.3,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-15",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40225": {
           "relaySiteId": "40225",
@@ -5019,9 +5086,20 @@
               "latestInputPriceCny": 7,
               "tokenUsageRatio": 0.9843,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 9,
+              "passRate": 95.7,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.5,
+              "latestInputPriceCny": 7,
+              "tokenUsageRatio": 0.9842,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 19,
+          "totalAppearances": 20,
           "bestRank": 4,
           "worstRank": 10,
           "latestPassRate": 95.7,
@@ -5029,7 +5107,7 @@
           "latestAvgLatencyS": 3.5,
           "latestInputPriceCny": 7,
           "firstSeen": "2026-06-16",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40299": {
           "relaySiteId": "40299",
@@ -5257,17 +5335,28 @@
               "latestInputPriceCny": 7.5,
               "tokenUsageRatio": 0.9919,
               "sampleCount": 24
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 10,
+              "passRate": 87,
+              "onlineRate": 95.8,
+              "errorRate": 4.2,
+              "avgLatencyS": 4,
+              "latestInputPriceCny": 7.5,
+              "tokenUsageRatio": 0.9755,
+              "sampleCount": 24
             }
           ],
-          "totalAppearances": 13,
+          "totalAppearances": 14,
           "bestRank": 6,
           "worstRank": 10,
-          "latestPassRate": 91.7,
-          "latestOnlineRate": 100,
+          "latestPassRate": 87,
+          "latestOnlineRate": 95.8,
           "latestAvgLatencyS": 4,
           "latestInputPriceCny": 7.5,
           "firstSeen": "2026-06-17",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40208": {
           "relaySiteId": "40208",
@@ -5405,17 +5494,59 @@
               "latestInputPriceCny": 18.25,
               "tokenUsageRatio": 1.0065,
               "sampleCount": 25
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 1,
+              "passRate": 93.1,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 6,
+              "latestInputPriceCny": 18.25,
+              "tokenUsageRatio": 0.9957,
+              "sampleCount": 29
             }
           ],
-          "totalAppearances": 4,
+          "totalAppearances": 5,
           "bestRank": 1,
           "worstRank": 5,
-          "latestPassRate": 92,
+          "latestPassRate": 93.1,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 5.7,
+          "latestAvgLatencyS": 6,
           "latestInputPriceCny": 18.25,
           "firstSeen": "2026-06-18",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
+        },
+        "40184": {
+          "relaySiteId": "40184",
+          "site": "汇云AI",
+          "siteDomain": "huiyun.asia",
+          "channel": "claude",
+          "displayName": "claude",
+          "siteUrl": "https://huiyun.asia/login",
+          "verificationType": "personal",
+          "appearances": [
+            {
+              "date": "2026-06-19",
+              "rank": 8,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 6.2,
+              "latestInputPriceCny": 4.55,
+              "tokenUsageRatio": 0.6016,
+              "sampleCount": 46
+            }
+          ],
+          "totalAppearances": 1,
+          "bestRank": 8,
+          "worstRank": 8,
+          "latestPassRate": 100,
+          "latestOnlineRate": 100,
+          "latestAvgLatencyS": 6.2,
+          "latestInputPriceCny": 4.55,
+          "firstSeen": "2026-06-19",
+          "lastSeen": "2026-06-19"
         }
       }
     },
@@ -5891,9 +6022,20 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 1.0042,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 6,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.2,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 1.0064,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 8,
+          "totalAppearances": 9,
           "bestRank": 2,
           "worstRank": 7,
           "latestPassRate": 100,
@@ -5901,7 +6043,7 @@
           "latestAvgLatencyS": 4.2,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40246": {
           "relaySiteId": "40246",
@@ -6646,9 +6788,20 @@
               "latestInputPriceCny": 5.175,
               "tokenUsageRatio": 1.045,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 7,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4,
+              "latestInputPriceCny": 5.175,
+              "tokenUsageRatio": 1.0496,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 32,
+          "totalAppearances": 33,
           "bestRank": 1,
           "worstRank": 10,
           "latestPassRate": 100,
@@ -6656,7 +6809,7 @@
           "latestAvgLatencyS": 4,
           "latestInputPriceCny": 5.175,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40175": {
           "relaySiteId": "40175",
@@ -7421,17 +7574,28 @@
               "latestInputPriceCny": 4,
               "tokenUsageRatio": 1.0481,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 9,
+              "passRate": 95.7,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.1,
+              "latestInputPriceCny": 4,
+              "tokenUsageRatio": 1.0457,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 40,
+          "totalAppearances": 41,
           "bestRank": 1,
           "worstRank": 10,
           "latestPassRate": 95.7,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 4.2,
+          "latestAvgLatencyS": 4.1,
           "latestInputPriceCny": 4,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "39842": {
           "relaySiteId": "39842",
@@ -7925,9 +8089,20 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 1.011,
               "sampleCount": 46
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 1,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.7,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 1.0128,
+              "sampleCount": 46
             }
           ],
-          "totalAppearances": 44,
+          "totalAppearances": 45,
           "bestRank": 1,
           "worstRank": 10,
           "latestPassRate": 100,
@@ -7935,7 +8110,7 @@
           "latestAvgLatencyS": 3.7,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40123": {
           "relaySiteId": "40123",
@@ -8253,17 +8428,28 @@
               "latestInputPriceCny": 4.5567,
               "tokenUsageRatio": 0.2748,
               "sampleCount": 46
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 4,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.6,
+              "latestInputPriceCny": 4.5567,
+              "tokenUsageRatio": 0.2751,
+              "sampleCount": 46
             }
           ],
-          "totalAppearances": 28,
+          "totalAppearances": 29,
           "bestRank": 3,
           "worstRank": 10,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 4.8,
+          "latestAvgLatencyS": 4.6,
           "latestInputPriceCny": 4.5567,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40064": {
           "relaySiteId": "40064",
@@ -9597,9 +9783,20 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 1.2671,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 5,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.3,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 1.0922,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 14,
+          "totalAppearances": 15,
           "bestRank": 2,
           "worstRank": 9,
           "latestPassRate": 100,
@@ -9607,7 +9804,7 @@
           "latestAvgLatencyS": 4.3,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "39923": {
           "relaySiteId": "39923",
@@ -10434,9 +10631,20 @@
               "latestInputPriceCny": 10,
               "tokenUsageRatio": 1.0645,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 3,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 3.5,
+              "latestInputPriceCny": 10,
+              "tokenUsageRatio": 1.0646,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 27,
+          "totalAppearances": 28,
           "bestRank": 1,
           "worstRank": 9,
           "latestPassRate": 100,
@@ -10444,7 +10652,7 @@
           "latestAvgLatencyS": 3.5,
           "latestInputPriceCny": 10,
           "firstSeen": "2026-06-15",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40299": {
           "relaySiteId": "40299",
@@ -10619,9 +10827,20 @@
               "latestInputPriceCny": 5,
               "tokenUsageRatio": 1.0166,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 10,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.4,
+              "latestInputPriceCny": 5,
+              "tokenUsageRatio": 1.0143,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 15,
+          "totalAppearances": 16,
           "bestRank": 2,
           "worstRank": 10,
           "latestPassRate": 100,
@@ -10629,7 +10848,7 @@
           "latestAvgLatencyS": 4.4,
           "latestInputPriceCny": 5,
           "firstSeen": "2026-06-17",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40209": {
           "relaySiteId": "40209",
@@ -10705,17 +10924,28 @@
               "latestInputPriceCny": 7.5,
               "tokenUsageRatio": 1.0521,
               "sampleCount": 24
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 8,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.5,
+              "latestInputPriceCny": 7.5,
+              "tokenUsageRatio": 1.0449,
+              "sampleCount": 24
             }
           ],
-          "totalAppearances": 6,
+          "totalAppearances": 7,
           "bestRank": 4,
           "worstRank": 10,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 4.6,
+          "latestAvgLatencyS": 4.5,
           "latestInputPriceCny": 7.5,
           "firstSeen": "2026-06-17",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40225": {
           "relaySiteId": "40225",
@@ -10811,17 +11041,28 @@
               "latestInputPriceCny": 18.25,
               "tokenUsageRatio": 0.9596,
               "sampleCount": 27
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 2,
+              "passRate": 96.7,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 4.7,
+              "latestInputPriceCny": 18.25,
+              "tokenUsageRatio": 0.9632,
+              "sampleCount": 30
             }
           ],
-          "totalAppearances": 4,
+          "totalAppearances": 5,
           "bestRank": 1,
           "worstRank": 3,
-          "latestPassRate": 96.3,
+          "latestPassRate": 96.7,
           "latestOnlineRate": 100,
           "latestAvgLatencyS": 4.7,
           "latestInputPriceCny": 18.25,
           "firstSeen": "2026-06-18",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         }
       }
     },
@@ -11117,17 +11358,28 @@
               "latestInputPriceCny": 1,
               "tokenUsageRatio": 1.1599,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 6,
+              "passRate": 100,
+              "onlineRate": 97.9,
+              "errorRate": 2.1,
+              "avgLatencyS": 7.7,
+              "latestInputPriceCny": 1,
+              "tokenUsageRatio": 1.1462,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 14,
+          "totalAppearances": 15,
           "bestRank": 4,
           "worstRank": 8,
           "latestPassRate": 100,
           "latestOnlineRate": 97.9,
-          "latestAvgLatencyS": 7.8,
+          "latestAvgLatencyS": 7.7,
           "latestInputPriceCny": 1,
           "firstSeen": "2026-06-12",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40009": {
           "relaySiteId": "40009",
@@ -13407,17 +13659,28 @@
               "latestInputPriceCny": 1.9,
               "tokenUsageRatio": 0.5477,
               "sampleCount": 48
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 10,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.3,
+              "latestInputPriceCny": 1.9,
+              "tokenUsageRatio": 0.6073,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 21,
+          "totalAppearances": 22,
           "bestRank": 4,
           "worstRank": 10,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 8.6,
+          "latestAvgLatencyS": 9.3,
           "latestInputPriceCny": 1.9,
           "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-17"
+          "lastSeen": "2026-06-19"
         },
         "39799": {
           "relaySiteId": "39799",
@@ -13515,17 +13778,28 @@
               "latestInputPriceCny": 2.5,
               "tokenUsageRatio": 1.1083,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 7,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.4,
+              "latestInputPriceCny": 2.5,
+              "tokenUsageRatio": 1.0997,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 8,
+          "totalAppearances": 9,
           "bestRank": 4,
           "worstRank": 10,
-          "latestPassRate": 97.9,
+          "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 7.2,
+          "latestAvgLatencyS": 7.4,
           "latestInputPriceCny": 2.5,
           "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "39795": {
           "relaySiteId": "39795",
@@ -13579,9 +13853,20 @@
               "latestInputPriceCny": 3.5,
               "tokenUsageRatio": 1.101,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 9,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.8,
+              "latestInputPriceCny": 3.5,
+              "tokenUsageRatio": 1.0893,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 4,
+          "totalAppearances": 5,
           "bestRank": 5,
           "worstRank": 9,
           "latestPassRate": 100,
@@ -13589,7 +13874,7 @@
           "latestAvgLatencyS": 7.8,
           "latestInputPriceCny": 3.5,
           "firstSeen": "2026-06-13",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40123": {
           "relaySiteId": "40123",
@@ -14513,9 +14798,20 @@
               "latestInputPriceCny": 2.032258,
               "tokenUsageRatio": 1.0323,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 4,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.4,
+              "latestInputPriceCny": 2.032258,
+              "tokenUsageRatio": 1.0269,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 28,
+          "totalAppearances": 29,
           "bestRank": 2,
           "worstRank": 10,
           "latestPassRate": 100,
@@ -14523,7 +14819,7 @@
           "latestAvgLatencyS": 7.4,
           "latestInputPriceCny": 2.032258,
           "firstSeen": "2026-06-14",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "39825": {
           "relaySiteId": "39825",
@@ -15015,17 +15311,28 @@
               "latestInputPriceCny": 2.5,
               "tokenUsageRatio": 0.6233,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 1,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 8.7,
+              "latestInputPriceCny": 2.5,
+              "tokenUsageRatio": 0.6104,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 36,
+          "totalAppearances": 37,
           "bestRank": 1,
           "worstRank": 10,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 8.8,
+          "latestAvgLatencyS": 8.7,
           "latestInputPriceCny": 2.5,
           "firstSeen": "2026-06-14",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40175": {
           "relaySiteId": "40175",
@@ -15471,17 +15778,28 @@
               "latestInputPriceCny": 2,
               "tokenUsageRatio": 0.8044,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 3,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 8.2,
+              "latestInputPriceCny": 2,
+              "tokenUsageRatio": 0.7819,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 25,
+          "totalAppearances": 26,
           "bestRank": 1,
           "worstRank": 9,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 8.1,
+          "latestAvgLatencyS": 8.2,
           "latestInputPriceCny": 2,
           "firstSeen": "2026-06-15",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40158": {
           "relaySiteId": "40158",
@@ -15623,17 +15941,28 @@
               "latestInputPriceCny": 2,
               "tokenUsageRatio": 1.1654,
               "sampleCount": 46
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 8,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.9,
+              "latestInputPriceCny": 2,
+              "tokenUsageRatio": 1.15,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 12,
+          "totalAppearances": 13,
           "bestRank": 4,
           "worstRank": 10,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 10.1,
+          "latestAvgLatencyS": 9.9,
           "latestInputPriceCny": 2,
           "firstSeen": "2026-06-15",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40216": {
           "relaySiteId": "40216",
@@ -16333,9 +16662,20 @@
               "latestInputPriceCny": 2,
               "tokenUsageRatio": 1.0966,
               "sampleCount": 47
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 5,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 7.5,
+              "latestInputPriceCny": 2,
+              "tokenUsageRatio": 1.0795,
+              "sampleCount": 47
             }
           ],
-          "totalAppearances": 7,
+          "totalAppearances": 8,
           "bestRank": 2,
           "worstRank": 9,
           "latestPassRate": 100,
@@ -16343,7 +16683,7 @@
           "latestAvgLatencyS": 7.5,
           "latestInputPriceCny": 2,
           "firstSeen": "2026-06-18",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         },
         "40325": {
           "relaySiteId": "40325",
@@ -16397,17 +16737,28 @@
               "latestInputPriceCny": 18.25,
               "tokenUsageRatio": 0.5824,
               "sampleCount": 28
+            },
+            {
+              "date": "2026-06-19",
+              "rank": 2,
+              "passRate": 100,
+              "onlineRate": 100,
+              "errorRate": 0,
+              "avgLatencyS": 9.4,
+              "latestInputPriceCny": 18.25,
+              "tokenUsageRatio": 0.5741,
+              "sampleCount": 32
             }
           ],
-          "totalAppearances": 4,
+          "totalAppearances": 5,
           "bestRank": 1,
           "worstRank": 2,
           "latestPassRate": 100,
           "latestOnlineRate": 100,
-          "latestAvgLatencyS": 9.5,
+          "latestAvgLatencyS": 9.4,
           "latestInputPriceCny": 18.25,
           "firstSeen": "2026-06-18",
-          "lastSeen": "2026-06-18"
+          "lastSeen": "2026-06-19"
         }
       }
     }
