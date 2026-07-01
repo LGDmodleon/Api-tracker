@@ -1,22 +1,7 @@
 name: 每日数据采集 (每2小时)
 
 on:
-  push:
-    paths:
-      - 'site/**'
-      - 'main.py'
-      - '.github/workflows/**'
-  schedule:
-    # 北京时间 8:00~22:00 每2小时 → UTC
-    - cron: '0 0 * * *'   # 08:00
-    - cron: '0 2 * * *'   # 10:00
-    - cron: '0 4 * * *'   # 12:00
-    - cron: '0 6 * * *'   # 14:00
-    - cron: '0 8 * * *'   # 16:00
-    - cron: '0 10 * * *'  # 18:00
-    - cron: '0 12 * * *'  # 20:00
-    - cron: '0 14 * * *'  # 22:00
-  workflow_dispatch:   # 支持 GitHub 网页上手动触发
+  workflow_dispatch:   # 仅支持手动触发（自动采集已停止，hvoy.ai 启用了 Cloudflare 防护）
 
 # 权限：推送代码 + 部署 Pages
 permissions:
